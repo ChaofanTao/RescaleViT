@@ -1,7 +1,11 @@
 # Rescale Vision Transformer
 ### 1. Introduction
 
-Pytorch implementation of RescaleViT. The code for HKU COMP9501: Machine learing. Group members: Tao Chaofan and Deng weipeng.
+Pytorch implementation of RescaleViT. 
+
+The project investigates vision transformer with **different normalization methods (LN, GN, BN)**, or **training without normalization**, refer to [Is normalization indispensable for training deep neural networks?](https://papers.nips.cc/paper/2020/file/9b8619251a19057cff70779273e95aa6-Paper.pdf).
+
+HKU COMP9501 course project. Group members: Tao Chaofan and Deng weipeng. 
 
 Dictionary structure:
 ```
@@ -17,6 +21,8 @@ RescaleViT
 
 ### 2. Train and evaluate Model
 ```
+pip install -r requirements.txt
+
 python3 train.py --name cifar10-100_500 --dataset cifar10 --norm_type Rescale  --model_type ViT-B_16  --fp16 --fp16_opt_level O2
 ```
 ```--name``` is the name of experiment, which is alo the prefix of saved checkpoint name and log file name.
@@ -57,12 +63,13 @@ From the results, we can observe that the pretained checkpoint on the Imagenet21
 On the other hand, for the model trained from scratch, the results cannot beat CNN-based model, which is consists with the obseration in the paper [ViT](https://arxiv.org/abs/2010.11929).
 
 Besides the past experience about CNN, we have several empirical deduction.
-1. Transformer has potential to beat CNN-based model, while it generally needs more parameters and more training time. 
+1. Transformer has potential to outperform CNN-based model, while it generally needs more parameters and more training time. 
 2. The pretained checkpoint is very important for training the transformer. It is understandable since transformer has much more parameters. For example, ViT-B_16(**85.8M**) v.s ResNet18 (**11.7M**).
-3. Layer-normalization has minor improvements for transformer on the CIFAR10 and CIFAR100, compared to BN, GN. In addition, RescaleViT can achieve similar results. Both pretained model and RescaleViT can speedup the training time a little bit.
+3. Layer-normalization has minor improvements for transformer on the CIFAR10 and CIFAR100, compared to BN, GN. In addition, RescaleViT can achieve similar results. 
+4. Both pretained model and RescaleViT can speedup the training time a little bit.
 
 ### CIFAR-10
-* [**tensorboard**](./logs/) contains some of training information, we donot upload all the tensorboards file due to space limitation. "+" denotes the normalization method used in ViT. We use "*" denote the model initialized with pretained checkpoint.
+* [**tensorboard**](./logs/) contains some of training information, we donot upload all the tensorboards file due to space limitation. "+" denotes the normalization method used in ViT. We use "*" denote the model initialized with pretained checkpoint on Imagenet21k.
 
 |    model     |  LN | BN | GN | Rescale  | resolution | acc(%) |  time(min)   |
 |:------------:|:--:|:--:|:--:|:------:|:-------------:|:-----:|:-------:|
@@ -172,7 +179,9 @@ Rescale (without normalization)
 
 
 ### Loss and Accuracy
-The validation loss and accuracy are illustrated below. Architecture: ViT-B_32, Dataset:CIFAR-10
+The validation loss and accuracy are illustrated below. Architecture: ViT-B_32, Dataset:CIFAR-10. 
+
+Green line is loss curve and blue line is accuracy curve. The model with (LN+pretained) has a good initialization that achieve over 90% accuracy before training, and it converges quickly. 
 
 LN and LN*(pretrained on ImageNet21k) 
 <div align="center">
