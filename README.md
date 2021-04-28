@@ -116,43 +116,46 @@ We visualize the attention map at fisrt head in 0, 3, 6 ,9 block.
 
 We can observe that the attention map is sparsely distributed regardless of normalization methods. It is noteworthy that the pretrained LN-model learn the most important components along the diagonal, which means the learned attention is focus on each neuron itself.
 
+
+
 LN
-<center class="half">
-    <img src="./img/plot_attn/LN_layer_0.png" width="95"/>
-    <img src="./img/plot_attn/LN_layer_0.png" width="95"/> 
-    <img src="./img/plot_attn/LN_layer_0.png" width="95"/> 
-    <img src="./img/plot_attn/LN_layer_0.png" width="95"/>         
-</center>
+<div align="center">
+<img src="./img/plot_attn/LN_layer_0.png" height="170sx" >
+<img src="./img/plot_attn/LN_layer_3.png" height="170sx"  >
+<img src="./img/plot_attn/LN_layer_6.png" height="170sx"  >
+<img src="./img/plot_attn/LN_layer_9.png" height="170sx"  >
+</div>
 
 LN (pretrain)
-<center class="half">
-    <img src="./img/plot_attn/LN2_layer_0.png" width="95"/>
-    <img src="./img/plot_attn/LN2_layer_0.png" width="95"/> 
-    <img src="./img/plot_attn/LN2_layer_0.png" width="95"/> 
-    <img src="./img/plot_attn/LN2_layer_0.png" width="95"/>         
-</center>
+<div align="center">
+<img src="./img/plot_attn/LN2_layer_0.png" height="170sx" >
+<img src="./img/plot_attn/LN2_layer_3.png" height="170sx"  >
+<img src="./img/plot_attn/LN2_layer_6.png" height="170sx"  >
+<img src="./img/plot_attn/LN2_layer_9.png" height="170sx"  >
+</div>
 
 BN
-<center class="half">
-    <img src="./img/plot_attn/BN_layer_0.png" width="95"/>
-    <img src="./img/plot_attn/BN_layer_0.png" width="95"/> 
-    <img src="./img/plot_attn/BN_layer_0.png" width="95"/> 
-    <img src="./img/plot_attn/BN_layer_0.png" width="95"/>         
-</center>
+<div align="center">
+<img src="./img/plot_attn/BN_layer_0.png" height="170sx" >
+<img src="./img/plot_attn/BN_layer_3.png" height="170sx"  >
+<img src="./img/plot_attn/BN_layer_6.png" height="170sx"  >
+<img src="./img/plot_attn/BN_layer_9.png" height="170sx"  >
+</div>
 GN
-<center class="half">
-    <img src="./img/plot_attn/GN_layer_0.png" width="95"/>
-    <img src="./img/plot_attn/GN_layer_0.png" width="95"/> 
-    <img src="./img/plot_attn/GN_layer_0.png" width="95"/> 
-    <img src="./img/plot_attn/GN_layer_0.png" width="95"/>         
-</center>
+<div align="center">
+<img src="./img/plot_attn/GN_layer_0.png" height="170sx" >
+<img src="./img/plot_attn/GN_layer_3.png" height="170sx"  >
+<img src="./img/plot_attn/GN_layer_6.png" height="170sx"  >
+<img src="./img/plot_attn/GN_layer_9.png" height="170sx"  >
+</div>
 Rescale (without normalization)
-<center class="half">
-    <img src="./img/plot_attn/Rescale_layer_0.png" width="95"/>
-    <img src="./img/plot_attn/Rescale_layer_0.png" width="95"/> 
-    <img src="./img/plot_attn/Rescale_layer_0.png" width="95"/> 
-    <img src="./img/plot_attn/Rescale_layer_0.png" width="95"/>         
-</center>
+<div align="center">
+<img src="./img/plot_attn/Rescale_layer_0.png" height="170sx" >
+<img src="./img/plot_attn/Rescale_layer_3.png" height="170sx"  >
+<img src="./img/plot_attn/Rescale_layer_6.png" height="170sx"  >
+<img src="./img/plot_attn/Rescale_layer_9.png" height="170sx"  >
+</div>
+
 <br>
 
 
@@ -160,23 +163,21 @@ Rescale (without normalization)
 The validation loss and accuracy are illustrated below. Architecture: ViT-B_32, Dataset:CIFAR-10
 
 LN and LN*(pretrained on ImageNet21k) 
-<center class="half">
-    <img src="./img/plot_acc_loss/LN1_loss_acc.png" width="200"/>
-    <img src="./img/plot_acc_loss/LN2_loss_acc.png" width="200"/>   
-      
-</center>
-BN and GN
-<center class="half">
-    <img src="./img/plot_acc_loss/BN_loss_acc.png" width="200"/>
-    <img src="./img/plot_acc_loss/GN_loss_acc.png" width="200"/>   
-       
-</center>
-Rescale (without normalization)
-<center class="half">
-    <img src="./img/plot_acc_loss/Rescale_loss_acc.png" width="200"/>  
-  
-</center>
+<div align="center">
+<img src="./img/plot_acc_loss/LN1_loss_acc.png" height="250sx" >
+<img src="./img/plot_acc_loss/LN2_loss_acc.png" height="250sx"  >
+</div>
 
+BN and GN
+<div align="center">
+<img src="./img/plot_acc_loss/BN_loss_acc.png" height="250sx" >
+<img src="./img/plot_acc_loss/GN_loss_acc.png" height="250sx"  >
+</div>
+
+Rescale (without normalization)
+<div align="center">
+<img src="./img/plot_acc_loss/Rescale_loss_acc.png" height="250sx" >
+</div>
 <br>
 
 ## Acknowlegement
