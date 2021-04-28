@@ -3,6 +3,16 @@
 
 Pytorch implementation of RescaleViT. The code for HKU COMP9501: Machine learing. Group members: Tao Chaofan and Deng weipeng.
 
+Dictionary structure:
+```
+RescaleViT
+   |--img # Some visualization files
+   |--logs #  Tensorboard file during training
+   |--models # Model design
+   |--ouptut # Result log files during evaluation
+   |--utils # Some utilization including data loader, distributed training, learning scheduler and visualizers
+```
+
 
 
 ### 2. Train and evaluate Model
@@ -52,7 +62,7 @@ Besides the past experience about CNN, we have several empirical deduction.
 3. Layer-normalization has minor improvements for transformer on the CIFAR10 and CIFAR100, compared to BN, GN. In addition, RescaleViT can achieve similar results. Both pretained model and RescaleViT can speedup the training time a little bit.
 
 ### CIFAR-10
-* [**tensorboard**](./logs/)
+* [**tensorboard**](./logs/) contains some of training information, we donot upload all the tensorboards file due to space limitation.
 
 |    model     |  LN | BN | GN | Rescale  | resolution | acc(%) |  time(min)   |
 |:------------:|:--:|:--:|:--:|:------:|:-------------:|:-----:|:-------:|
