@@ -52,7 +52,7 @@ sh train3.sh # for cifar100
 ## Results
 We conduct all experiments on a single NVIDIA-3090 card. The default batch size is 128. We train 20000 iterations for all experiments. All the evaluation is made every ```---eval_every```(default setting is 100) iterations. And all the evaluation log files are available in ```"./output/"```. 
 
-We use "*" denote the model initialized with pretained checkpoint. From the results, we can observe that the pretained checkpoint on the Imagenet21k plays a significant role in  training ViT, for various architectures. The model used pretained checkpoint outperform the CNN-based model. 
+From the results, we can observe that the pretained checkpoint on the Imagenet21k plays a significant role in  training ViT, for various architectures. The model used pretained checkpoint outperform the CNN-based model. 
 
 On the other hand, for the model trained from scratch, the results cannot beat CNN-based model, which is consists with the obseration in the paper [ViT](https://arxiv.org/abs/2010.11929).
 
@@ -62,7 +62,7 @@ Besides the past experience about CNN, we have several empirical deduction.
 3. Layer-normalization has minor improvements for transformer on the CIFAR10 and CIFAR100, compared to BN, GN. In addition, RescaleViT can achieve similar results. Both pretained model and RescaleViT can speedup the training time a little bit.
 
 ### CIFAR-10
-* [**tensorboard**](./logs/) contains some of training information, we donot upload all the tensorboards file due to space limitation. "+" denotes the normalization method used in ViT.
+* [**tensorboard**](./logs/) contains some of training information, we donot upload all the tensorboards file due to space limitation. "+" denotes the normalization method used in ViT. We use "*" denote the model initialized with pretained checkpoint.
 
 |    model     |  LN | BN | GN | Rescale  | resolution | acc(%) |  time(min)   |
 |:------------:|:--:|:--:|:--:|:------:|:-------------:|:-----:|:-------:|
@@ -122,7 +122,7 @@ The ViT consists of a Standard Transformer Encoder, and the encoder consists of 
 The attention map for the input image can be visualized through the attention score of self-attention.
 
 Here is the learned attention map of ViT-B_16 on cifar10 dataset.
-We visualize the attention map at fisrt head in 0, 3, 6 ,9 block.
+We visualize the attention map at fisrt head in **0, 3rd, 6th ,9th block**.
 
 We can observe that the attention map is sparsely distributed regardless of normalization methods. It is noteworthy that the pretrained LN-model learn the most important components along the diagonal, which means the learned attention is focus on each neuron itself.
 
@@ -130,42 +130,42 @@ We can observe that the attention map is sparsely distributed regardless of norm
 
 LN
 <div align="center">
-<img src="./img/plot_attn/LN_layer_0.png" height="170sx" >
-<img src="./img/plot_attn/LN_layer_3.png" height="170sx"  >
-<img src="./img/plot_attn/LN_layer_6.png" height="170sx"  >
-<img src="./img/plot_attn/LN_layer_9.png" height="170sx"  >
+<img src="./img/plot_attn/LN_layer_0.png" height="150sx" >
+<img src="./img/plot_attn/LN_layer_3.png" height="150sx"  >
+<img src="./img/plot_attn/LN_layer_6.png" height="150sx"  >
+<img src="./img/plot_attn/LN_layer_9.png" height="150sx"  >
 </div>
 
 LN (pretrain)
 <div align="center">
-<img src="./img/plot_attn/LN2_layer_0.png" height="170sx" >
-<img src="./img/plot_attn/LN2_layer_3.png" height="170sx"  >
-<img src="./img/plot_attn/LN2_layer_6.png" height="170sx"  >
-<img src="./img/plot_attn/LN2_layer_9.png" height="170sx"  >
+<img src="./img/plot_attn/LN2_layer_0.png" height="150sx" >
+<img src="./img/plot_attn/LN2_layer_3.png" height="150sx"  >
+<img src="./img/plot_attn/LN2_layer_6.png" height="150sx"  >
+<img src="./img/plot_attn/LN2_layer_9.png" height="150sx"  >
 </div>
 
 BN
 <div align="center">
-<img src="./img/plot_attn/BN_layer_0.png" height="170sx" >
-<img src="./img/plot_attn/BN_layer_3.png" height="170sx"  >
-<img src="./img/plot_attn/BN_layer_6.png" height="170sx"  >
-<img src="./img/plot_attn/BN_layer_9.png" height="170sx"  >
+<img src="./img/plot_attn/BN_layer_0.png" height="150sx" >
+<img src="./img/plot_attn/BN_layer_3.png" height="150sx"  >
+<img src="./img/plot_attn/BN_layer_6.png" height="150sx"  >
+<img src="./img/plot_attn/BN_layer_9.png" height="150sx"  >
 </div>
 
 GN
 <div align="center">
-<img src="./img/plot_attn/GN_layer_0.png" height="170sx" >
-<img src="./img/plot_attn/GN_layer_3.png" height="170sx"  >
-<img src="./img/plot_attn/GN_layer_6.png" height="170sx"  >
-<img src="./img/plot_attn/GN_layer_9.png" height="170sx"  >
+<img src="./img/plot_attn/GN_layer_0.png" height="150sx" >
+<img src="./img/plot_attn/GN_layer_3.png" height="150sx"  >
+<img src="./img/plot_attn/GN_layer_6.png" height="150sx"  >
+<img src="./img/plot_attn/GN_layer_9.png" height="150sx"  >
 </div>
 
 Rescale (without normalization)
 <div align="center">
-<img src="./img/plot_attn/Rescale_layer_0.png" height="170sx" >
-<img src="./img/plot_attn/Rescale_layer_3.png" height="170sx"  >
-<img src="./img/plot_attn/Rescale_layer_6.png" height="170sx"  >
-<img src="./img/plot_attn/Rescale_layer_9.png" height="170sx"  >
+<img src="./img/plot_attn/Rescale_layer_0.png" height="150sx" >
+<img src="./img/plot_attn/Rescale_layer_3.png" height="150sx"  >
+<img src="./img/plot_attn/Rescale_layer_6.png" height="150sx"  >
+<img src="./img/plot_attn/Rescale_layer_9.png" height="150sx"  >
 </div>
 
 <br>
