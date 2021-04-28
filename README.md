@@ -62,7 +62,7 @@ Besides the past experience about CNN, we have several empirical deduction.
 3. Layer-normalization has minor improvements for transformer on the CIFAR10 and CIFAR100, compared to BN, GN. In addition, RescaleViT can achieve similar results. Both pretained model and RescaleViT can speedup the training time a little bit.
 
 ### CIFAR-10
-* [**tensorboard**](./logs/) contains some of training information, we donot upload all the tensorboards file due to space limitation.
+* [**tensorboard**](./logs/) contains some of training information, we donot upload all the tensorboards file due to space limitation. "+" denotes the normalization method used in ViT.
 
 |    model     |  LN | BN | GN | Rescale  | resolution | acc(%) |  time(min)   |
 |:------------:|:--:|:--:|:--:|:------:|:-------------:|:-----:|:-------:|
