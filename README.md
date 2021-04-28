@@ -50,7 +50,7 @@ sh train3.sh # for cifar100
 <br>
 
 ## Results
-We conduct all experiments on a single NVIDIA-3090 card. The default batch size is 512. We train 15000 iterations for all experiments. All the evaluation is made every ```---eval_every``` iterations. And all the evaluation log files are available in ```"./output/"```. 
+We conduct all experiments on a single NVIDIA-3090 card. The default batch size is 128. We train 20000 iterations for all experiments. All the evaluation is made every ```---eval_every```(default setting is 100) iterations. And all the evaluation log files are available in ```"./output/"```. 
 
 We use "*" denote the model initialized with pretained checkpoint. From the results, we can observe that the pretained checkpoint on the Imagenet21k plays a significant role in  training ViT, for various architectures. The model used pretained checkpoint outperform the CNN-based model. 
 
