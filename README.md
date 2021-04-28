@@ -141,6 +141,7 @@ BN
 <img src="./img/plot_attn/BN_layer_6.png" height="170sx"  >
 <img src="./img/plot_attn/BN_layer_9.png" height="170sx"  >
 </div>
+
 GN
 <div align="center">
 <img src="./img/plot_attn/GN_layer_0.png" height="170sx" >
@@ -148,6 +149,7 @@ GN
 <img src="./img/plot_attn/GN_layer_6.png" height="170sx"  >
 <img src="./img/plot_attn/GN_layer_9.png" height="170sx"  >
 </div>
+
 Rescale (without normalization)
 <div align="center">
 <img src="./img/plot_attn/Rescale_layer_0.png" height="170sx" >
