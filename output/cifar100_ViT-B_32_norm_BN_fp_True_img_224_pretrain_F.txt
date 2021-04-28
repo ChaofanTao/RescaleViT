@@ -1,0 +1,1894 @@
+04/27/2021 15:50:36 - WARNING - __main__ - Process rank: -1, device: cuda, n_gpu: 1, distributed training: False, 16-bits training: True
+04/27/2021 15:50:39 - INFO - __main__ - classifier: token
+hidden_size: 768
+patches:
+  size: !!python/tuple
+  - 32
+  - 32
+representation_size: null
+transformer:
+  attention_dropout_rate: 0.0
+  dropout_rate: 0.1
+  mlp_dim: 3072
+  num_heads: 12
+  num_layers: 12
+
+04/27/2021 15:50:39 - INFO - __main__ - Training parameters Namespace(dataset='cifar100', decay_type='cosine', device=device(type='cuda'), eval_batch_size=512, eval_every=100, fp16=True, fp16_opt_level='O2', gpu_id='1', gradient_accumulation_steps=1, img_size=224, learning_rate=0.05, local_rank=-1, loss_scale=0, max_grad_norm=1.0, model_type='ViT-B_32', n_gpu=1, name='cifar100-100_500_ViT-B_32_norm_BN_fp_True_img_224_pretrain_F', norm_type='BN', num_steps=20000, output_dir='output', pretrained_dir=None, seed=42, train_batch_size=128, warmup_steps=500, weight_decay=0)
+04/27/2021 15:50:39 - INFO - __main__ - Total Parameter: 	87.5M
+04/27/2021 15:50:40 - INFO - __main__ - ***** Running training *****
+04/27/2021 15:50:40 - INFO - __main__ -   Total optimization steps = 20000
+04/27/2021 15:50:40 - INFO - __main__ -   Instantaneous batch size per GPU = 128
+04/27/2021 15:50:40 - INFO - __main__ -   Total train batch size (w. parallel, distributed & accumulation) = 128
+04/27/2021 15:50:40 - INFO - __main__ -   Gradient Accumulation steps = 1
+04/27/2021 15:50:54 - INFO - __main__ - ***** Running Validation *****
+04/27/2021 15:50:54 - INFO - __main__ -   Num steps = 20
+04/27/2021 15:50:54 - INFO - __main__ -   Batch size = 512
+04/27/2021 15:51:01 - INFO - __main__ - 
+
+04/27/2021 15:51:01 - INFO - __main__ - Validation Results
+04/27/2021 15:51:01 - INFO - __main__ - Global Steps: 100
+04/27/2021 15:51:01 - INFO - __main__ - Valid Loss: 4.24465
+04/27/2021 15:51:01 - INFO - __main__ - Valid Accuracy: 0.06220
+04/27/2021 15:51:01 - INFO - __main__ - Saved model checkpoint to [DIR: output]
+04/27/2021 15:51:15 - INFO - __main__ - ***** Running Validation *****
+04/27/2021 15:51:15 - INFO - __main__ -   Num steps = 20
+04/27/2021 15:51:15 - INFO - __main__ -   Batch size = 512
+04/27/2021 15:51:21 - INFO - __main__ - 
+
+04/27/2021 15:51:21 - INFO - __main__ - Validation Results
+04/27/2021 15:51:21 - INFO - __main__ - Global Steps: 200
+04/27/2021 15:51:21 - INFO - __main__ - Valid Loss: 4.12129
+04/27/2021 15:51:21 - INFO - __main__ - Valid Accuracy: 0.07200
+04/27/2021 15:51:22 - INFO - __main__ - Saved model checkpoint to [DIR: output]
+04/27/2021 15:51:35 - INFO - __main__ - ***** Running Validation *****
+04/27/2021 15:51:35 - INFO - __main__ -   Num steps = 20
+04/27/2021 15:51:35 - INFO - __main__ -   Batch size = 512
+04/27/2021 15:51:41 - INFO - __main__ - 
+
+04/27/2021 15:51:41 - INFO - __main__ - Validation Results
+04/27/2021 15:51:41 - INFO - __main__ - Global Steps: 300
+04/27/2021 15:51:41 - INFO - __main__ - Valid Loss: 3.98917
+04/27/2021 15:51:41 - INFO - __main__ - Valid Accuracy: 0.08600
+04/27/2021 15:51:42 - INFO - __main__ - Saved model checkpoint to [DIR: output]
+04/27/2021 15:51:56 - INFO - __main__ - ***** Running Validation *****
+04/27/2021 15:51:56 - INFO - __main__ -   Num steps = 20
+04/27/2021 15:51:56 - INFO - __main__ -   Batch size = 512
+04/27/2021 15:52:03 - INFO - __main__ - 
+
+04/27/2021 15:52:03 - INFO - __main__ - Validation Results
+04/27/2021 15:52:03 - INFO - __main__ - Global Steps: 400
+04/27/2021 15:52:03 - INFO - __main__ - Valid Loss: 4.17740
+04/27/2021 15:52:03 - INFO - __main__ - Valid Accuracy: 0.07060
+04/27/2021 15:52:16 - INFO - __main__ - ***** Running Validation *****
+04/27/2021 15:52:16 - INFO - __main__ -   Num steps = 20
+04/27/2021 15:52:16 - INFO - __main__ -   Batch size = 512
+04/27/2021 15:52:23 - INFO - __main__ - 
+
+04/27/2021 15:52:23 - INFO - __main__ - Validation Results
+04/27/2021 15:52:23 - INFO - __main__ - Global Steps: 500
+04/27/2021 15:52:23 - INFO - __main__ - Valid Loss: 3.89934
+04/27/2021 15:52:23 - INFO - __main__ - Valid Accuracy: 0.09540
+04/27/2021 15:52:24 - INFO - __main__ - Saved model checkpoint to [DIR: output]
+04/27/2021 15:52:38 - INFO - __main__ - ***** Running Validation *****
+04/27/2021 15:52:38 - INFO - __main__ -   Num steps = 20
+04/27/2021 15:52:38 - INFO - __main__ -   Batch size = 512
+04/27/2021 15:52:44 - INFO - __main__ - 
+
+04/27/2021 15:52:44 - INFO - __main__ - Validation Results
+04/27/2021 15:52:44 - INFO - __main__ - Global Steps: 600
+04/27/2021 15:52:44 - INFO - __main__ - Valid Loss: 3.81285
+04/27/2021 15:52:44 - INFO - __main__ - Valid Accuracy: 0.11210
+04/27/2021 15:52:45 - INFO - __main__ - Saved model checkpoint to [DIR: output]
+04/27/2021 15:52:59 - INFO - __main__ - ***** Running Validation *****
+04/27/2021 15:52:59 - INFO - __main__ -   Num steps = 20
+04/27/2021 15:52:59 - INFO - __main__ -   Batch size = 512
+04/27/2021 15:53:05 - INFO - __main__ - 
+
+04/27/2021 15:53:05 - INFO - __main__ - Validation Results
+04/27/2021 15:53:05 - INFO - __main__ - Global Steps: 700
+04/27/2021 15:53:05 - INFO - __main__ - Valid Loss: 3.72564
+04/27/2021 15:53:05 - INFO - __main__ - Valid Accuracy: 0.13230
+04/27/2021 15:53:06 - INFO - __main__ - Saved model checkpoint to [DIR: output]
+04/27/2021 15:53:20 - INFO - __main__ - ***** Running Validation *****
+04/27/2021 15:53:20 - INFO - __main__ -   Num steps = 20
+04/27/2021 15:53:20 - INFO - __main__ -   Batch size = 512
+04/27/2021 15:53:27 - INFO - __main__ - 
+
+04/27/2021 15:53:27 - INFO - __main__ - Validation Results
+04/27/2021 15:53:27 - INFO - __main__ - Global Steps: 800
+04/27/2021 15:53:27 - INFO - __main__ - Valid Loss: 3.67074
+04/27/2021 15:53:27 - INFO - __main__ - Valid Accuracy: 0.12870
+04/27/2021 15:53:40 - INFO - __main__ - ***** Running Validation *****
+04/27/2021 15:53:40 - INFO - __main__ -   Num steps = 20
+04/27/2021 15:53:40 - INFO - __main__ -   Batch size = 512
+04/27/2021 15:53:47 - INFO - __main__ - 
+
+04/27/2021 15:53:47 - INFO - __main__ - Validation Results
+04/27/2021 15:53:47 - INFO - __main__ - Global Steps: 900
+04/27/2021 15:53:47 - INFO - __main__ - Valid Loss: 3.62397
+04/27/2021 15:53:47 - INFO - __main__ - Valid Accuracy: 0.14600
+04/27/2021 15:53:48 - INFO - __main__ - Saved model checkpoint to [DIR: output]
+04/27/2021 15:54:01 - INFO - __main__ - ***** Running Validation *****
+04/27/2021 15:54:01 - INFO - __main__ -   Num steps = 20
+04/27/2021 15:54:01 - INFO - __main__ -   Batch size = 512
+04/27/2021 15:54:08 - INFO - __main__ - 
+
+04/27/2021 15:54:08 - INFO - __main__ - Validation Results
+04/27/2021 15:54:08 - INFO - __main__ - Global Steps: 1000
+04/27/2021 15:54:08 - INFO - __main__ - Valid Loss: 3.56975
+04/27/2021 15:54:08 - INFO - __main__ - Valid Accuracy: 0.15010
+04/27/2021 15:54:08 - INFO - __main__ - Saved model checkpoint to [DIR: output]
+04/27/2021 15:54:22 - INFO - __main__ - ***** Running Validation *****
+04/27/2021 15:54:22 - INFO - __main__ -   Num steps = 20
+04/27/2021 15:54:22 - INFO - __main__ -   Batch size = 512
+04/27/2021 15:54:28 - INFO - __main__ - 
+
+04/27/2021 15:54:28 - INFO - __main__ - Validation Results
+04/27/2021 15:54:28 - INFO - __main__ - Global Steps: 1100
+04/27/2021 15:54:28 - INFO - __main__ - Valid Loss: 3.56754
+04/27/2021 15:54:28 - INFO - __main__ - Valid Accuracy: 0.15350
+04/27/2021 15:54:29 - INFO - __main__ - Saved model checkpoint to [DIR: output]
+04/27/2021 15:54:43 - INFO - __main__ - ***** Running Validation *****
+04/27/2021 15:54:43 - INFO - __main__ -   Num steps = 20
+04/27/2021 15:54:43 - INFO - __main__ -   Batch size = 512
+04/27/2021 15:54:50 - INFO - __main__ - 
+
+04/27/2021 15:54:50 - INFO - __main__ - Validation Results
+04/27/2021 15:54:50 - INFO - __main__ - Global Steps: 1200
+04/27/2021 15:54:50 - INFO - __main__ - Valid Loss: 3.56050
+04/27/2021 15:54:50 - INFO - __main__ - Valid Accuracy: 0.14870
+04/27/2021 15:55:04 - INFO - __main__ - ***** Running Validation *****
+04/27/2021 15:55:04 - INFO - __main__ -   Num steps = 20
+04/27/2021 15:55:04 - INFO - __main__ -   Batch size = 512
+04/27/2021 15:55:10 - INFO - __main__ - 
+
+04/27/2021 15:55:10 - INFO - __main__ - Validation Results
+04/27/2021 15:55:10 - INFO - __main__ - Global Steps: 1300
+04/27/2021 15:55:10 - INFO - __main__ - Valid Loss: 3.50568
+04/27/2021 15:55:10 - INFO - __main__ - Valid Accuracy: 0.16400
+04/27/2021 15:55:11 - INFO - __main__ - Saved model checkpoint to [DIR: output]
+04/27/2021 15:55:25 - INFO - __main__ - ***** Running Validation *****
+04/27/2021 15:55:25 - INFO - __main__ -   Num steps = 20
+04/27/2021 15:55:25 - INFO - __main__ -   Batch size = 512
+04/27/2021 15:55:31 - INFO - __main__ - 
+
+04/27/2021 15:55:31 - INFO - __main__ - Validation Results
+04/27/2021 15:55:31 - INFO - __main__ - Global Steps: 1400
+04/27/2021 15:55:31 - INFO - __main__ - Valid Loss: 3.47619
+04/27/2021 15:55:31 - INFO - __main__ - Valid Accuracy: 0.17460
+04/27/2021 15:55:32 - INFO - __main__ - Saved model checkpoint to [DIR: output]
+04/27/2021 15:55:46 - INFO - __main__ - ***** Running Validation *****
+04/27/2021 15:55:46 - INFO - __main__ -   Num steps = 20
+04/27/2021 15:55:46 - INFO - __main__ -   Batch size = 512
+04/27/2021 15:55:52 - INFO - __main__ - 
+
+04/27/2021 15:55:52 - INFO - __main__ - Validation Results
+04/27/2021 15:55:52 - INFO - __main__ - Global Steps: 1500
+04/27/2021 15:55:52 - INFO - __main__ - Valid Loss: 3.48456
+04/27/2021 15:55:52 - INFO - __main__ - Valid Accuracy: 0.16730
+04/27/2021 15:56:06 - INFO - __main__ - ***** Running Validation *****
+04/27/2021 15:56:06 - INFO - __main__ -   Num steps = 20
+04/27/2021 15:56:06 - INFO - __main__ -   Batch size = 512
+04/27/2021 15:56:13 - INFO - __main__ - 
+
+04/27/2021 15:56:13 - INFO - __main__ - Validation Results
+04/27/2021 15:56:13 - INFO - __main__ - Global Steps: 1600
+04/27/2021 15:56:13 - INFO - __main__ - Valid Loss: 3.39882
+04/27/2021 15:56:13 - INFO - __main__ - Valid Accuracy: 0.18710
+04/27/2021 15:56:14 - INFO - __main__ - Saved model checkpoint to [DIR: output]
+04/27/2021 15:56:27 - INFO - __main__ - ***** Running Validation *****
+04/27/2021 15:56:27 - INFO - __main__ -   Num steps = 20
+04/27/2021 15:56:27 - INFO - __main__ -   Batch size = 512
+04/27/2021 15:56:34 - INFO - __main__ - 
+
+04/27/2021 15:56:34 - INFO - __main__ - Validation Results
+04/27/2021 15:56:34 - INFO - __main__ - Global Steps: 1700
+04/27/2021 15:56:34 - INFO - __main__ - Valid Loss: 3.42357
+04/27/2021 15:56:34 - INFO - __main__ - Valid Accuracy: 0.18200
+04/27/2021 15:56:48 - INFO - __main__ - ***** Running Validation *****
+04/27/2021 15:56:48 - INFO - __main__ -   Num steps = 20
+04/27/2021 15:56:48 - INFO - __main__ -   Batch size = 512
+04/27/2021 15:56:54 - INFO - __main__ - 
+
+04/27/2021 15:56:54 - INFO - __main__ - Validation Results
+04/27/2021 15:56:54 - INFO - __main__ - Global Steps: 1800
+04/27/2021 15:56:54 - INFO - __main__ - Valid Loss: 3.45077
+04/27/2021 15:56:54 - INFO - __main__ - Valid Accuracy: 0.17390
+04/27/2021 15:57:08 - INFO - __main__ - ***** Running Validation *****
+04/27/2021 15:57:08 - INFO - __main__ -   Num steps = 20
+04/27/2021 15:57:08 - INFO - __main__ -   Batch size = 512
+04/27/2021 15:57:15 - INFO - __main__ - 
+
+04/27/2021 15:57:15 - INFO - __main__ - Validation Results
+04/27/2021 15:57:15 - INFO - __main__ - Global Steps: 1900
+04/27/2021 15:57:15 - INFO - __main__ - Valid Loss: 3.40341
+04/27/2021 15:57:15 - INFO - __main__ - Valid Accuracy: 0.18490
+04/27/2021 15:57:29 - INFO - __main__ - ***** Running Validation *****
+04/27/2021 15:57:29 - INFO - __main__ -   Num steps = 20
+04/27/2021 15:57:29 - INFO - __main__ -   Batch size = 512
+04/27/2021 15:57:35 - INFO - __main__ - 
+
+04/27/2021 15:57:35 - INFO - __main__ - Validation Results
+04/27/2021 15:57:35 - INFO - __main__ - Global Steps: 2000
+04/27/2021 15:57:35 - INFO - __main__ - Valid Loss: 3.37415
+04/27/2021 15:57:35 - INFO - __main__ - Valid Accuracy: 0.18650
+04/27/2021 15:57:49 - INFO - __main__ - ***** Running Validation *****
+04/27/2021 15:57:49 - INFO - __main__ -   Num steps = 20
+04/27/2021 15:57:49 - INFO - __main__ -   Batch size = 512
+04/27/2021 15:57:55 - INFO - __main__ - 
+
+04/27/2021 15:57:55 - INFO - __main__ - Validation Results
+04/27/2021 15:57:55 - INFO - __main__ - Global Steps: 2100
+04/27/2021 15:57:55 - INFO - __main__ - Valid Loss: 3.35191
+04/27/2021 15:57:55 - INFO - __main__ - Valid Accuracy: 0.19730
+04/27/2021 15:57:57 - INFO - __main__ - Saved model checkpoint to [DIR: output]
+04/27/2021 15:58:10 - INFO - __main__ - ***** Running Validation *****
+04/27/2021 15:58:10 - INFO - __main__ -   Num steps = 20
+04/27/2021 15:58:10 - INFO - __main__ -   Batch size = 512
+04/27/2021 15:58:17 - INFO - __main__ - 
+
+04/27/2021 15:58:17 - INFO - __main__ - Validation Results
+04/27/2021 15:58:17 - INFO - __main__ - Global Steps: 2200
+04/27/2021 15:58:17 - INFO - __main__ - Valid Loss: 3.36817
+04/27/2021 15:58:17 - INFO - __main__ - Valid Accuracy: 0.19380
+04/27/2021 15:58:30 - INFO - __main__ - ***** Running Validation *****
+04/27/2021 15:58:30 - INFO - __main__ -   Num steps = 20
+04/27/2021 15:58:30 - INFO - __main__ -   Batch size = 512
+04/27/2021 15:58:37 - INFO - __main__ - 
+
+04/27/2021 15:58:37 - INFO - __main__ - Validation Results
+04/27/2021 15:58:37 - INFO - __main__ - Global Steps: 2300
+04/27/2021 15:58:37 - INFO - __main__ - Valid Loss: 3.31475
+04/27/2021 15:58:37 - INFO - __main__ - Valid Accuracy: 0.20230
+04/27/2021 15:58:39 - INFO - __main__ - Saved model checkpoint to [DIR: output]
+04/27/2021 15:58:52 - INFO - __main__ - ***** Running Validation *****
+04/27/2021 15:58:52 - INFO - __main__ -   Num steps = 20
+04/27/2021 15:58:52 - INFO - __main__ -   Batch size = 512
+04/27/2021 15:59:00 - INFO - __main__ - 
+
+04/27/2021 15:59:00 - INFO - __main__ - Validation Results
+04/27/2021 15:59:00 - INFO - __main__ - Global Steps: 2400
+04/27/2021 15:59:00 - INFO - __main__ - Valid Loss: 3.27187
+04/27/2021 15:59:00 - INFO - __main__ - Valid Accuracy: 0.21370
+04/27/2021 15:59:01 - INFO - __main__ - Saved model checkpoint to [DIR: output]
+04/27/2021 15:59:13 - INFO - __main__ - ***** Running Validation *****
+04/27/2021 15:59:13 - INFO - __main__ -   Num steps = 20
+04/27/2021 15:59:13 - INFO - __main__ -   Batch size = 512
+04/27/2021 15:59:21 - INFO - __main__ - 
+
+04/27/2021 15:59:21 - INFO - __main__ - Validation Results
+04/27/2021 15:59:21 - INFO - __main__ - Global Steps: 2500
+04/27/2021 15:59:21 - INFO - __main__ - Valid Loss: 3.30624
+04/27/2021 15:59:21 - INFO - __main__ - Valid Accuracy: 0.20350
+04/27/2021 15:59:33 - INFO - __main__ - ***** Running Validation *****
+04/27/2021 15:59:33 - INFO - __main__ -   Num steps = 20
+04/27/2021 15:59:33 - INFO - __main__ -   Batch size = 512
+04/27/2021 15:59:41 - INFO - __main__ - 
+
+04/27/2021 15:59:41 - INFO - __main__ - Validation Results
+04/27/2021 15:59:41 - INFO - __main__ - Global Steps: 2600
+04/27/2021 15:59:41 - INFO - __main__ - Valid Loss: 3.27952
+04/27/2021 15:59:41 - INFO - __main__ - Valid Accuracy: 0.21050
+04/27/2021 15:59:53 - INFO - __main__ - ***** Running Validation *****
+04/27/2021 15:59:53 - INFO - __main__ -   Num steps = 20
+04/27/2021 15:59:53 - INFO - __main__ -   Batch size = 512
+04/27/2021 16:00:01 - INFO - __main__ - 
+
+04/27/2021 16:00:01 - INFO - __main__ - Validation Results
+04/27/2021 16:00:01 - INFO - __main__ - Global Steps: 2700
+04/27/2021 16:00:01 - INFO - __main__ - Valid Loss: 3.28187
+04/27/2021 16:00:01 - INFO - __main__ - Valid Accuracy: 0.20690
+04/27/2021 16:00:14 - INFO - __main__ - ***** Running Validation *****
+04/27/2021 16:00:14 - INFO - __main__ -   Num steps = 20
+04/27/2021 16:00:14 - INFO - __main__ -   Batch size = 512
+04/27/2021 16:00:21 - INFO - __main__ - 
+
+04/27/2021 16:00:21 - INFO - __main__ - Validation Results
+04/27/2021 16:00:21 - INFO - __main__ - Global Steps: 2800
+04/27/2021 16:00:21 - INFO - __main__ - Valid Loss: 3.25659
+04/27/2021 16:00:21 - INFO - __main__ - Valid Accuracy: 0.21590
+04/27/2021 16:00:23 - INFO - __main__ - Saved model checkpoint to [DIR: output]
+04/27/2021 16:00:35 - INFO - __main__ - ***** Running Validation *****
+04/27/2021 16:00:35 - INFO - __main__ -   Num steps = 20
+04/27/2021 16:00:35 - INFO - __main__ -   Batch size = 512
+04/27/2021 16:00:43 - INFO - __main__ - 
+
+04/27/2021 16:00:43 - INFO - __main__ - Validation Results
+04/27/2021 16:00:43 - INFO - __main__ - Global Steps: 2900
+04/27/2021 16:00:43 - INFO - __main__ - Valid Loss: 3.20134
+04/27/2021 16:00:43 - INFO - __main__ - Valid Accuracy: 0.22760
+04/27/2021 16:00:44 - INFO - __main__ - Saved model checkpoint to [DIR: output]
+04/27/2021 16:00:56 - INFO - __main__ - ***** Running Validation *****
+04/27/2021 16:00:56 - INFO - __main__ -   Num steps = 20
+04/27/2021 16:00:56 - INFO - __main__ -   Batch size = 512
+04/27/2021 16:01:04 - INFO - __main__ - 
+
+04/27/2021 16:01:04 - INFO - __main__ - Validation Results
+04/27/2021 16:01:04 - INFO - __main__ - Global Steps: 3000
+04/27/2021 16:01:04 - INFO - __main__ - Valid Loss: 3.22613
+04/27/2021 16:01:04 - INFO - __main__ - Valid Accuracy: 0.21920
+04/27/2021 16:01:17 - INFO - __main__ - ***** Running Validation *****
+04/27/2021 16:01:17 - INFO - __main__ -   Num steps = 20
+04/27/2021 16:01:17 - INFO - __main__ -   Batch size = 512
+04/27/2021 16:01:25 - INFO - __main__ - 
+
+04/27/2021 16:01:25 - INFO - __main__ - Validation Results
+04/27/2021 16:01:25 - INFO - __main__ - Global Steps: 3100
+04/27/2021 16:01:25 - INFO - __main__ - Valid Loss: 3.25392
+04/27/2021 16:01:25 - INFO - __main__ - Valid Accuracy: 0.21860
+04/27/2021 16:01:38 - INFO - __main__ - ***** Running Validation *****
+04/27/2021 16:01:38 - INFO - __main__ -   Num steps = 20
+04/27/2021 16:01:38 - INFO - __main__ -   Batch size = 512
+04/27/2021 16:01:46 - INFO - __main__ - 
+
+04/27/2021 16:01:46 - INFO - __main__ - Validation Results
+04/27/2021 16:01:46 - INFO - __main__ - Global Steps: 3200
+04/27/2021 16:01:46 - INFO - __main__ - Valid Loss: 3.20523
+04/27/2021 16:01:46 - INFO - __main__ - Valid Accuracy: 0.22070
+04/27/2021 16:01:58 - INFO - __main__ - ***** Running Validation *****
+04/27/2021 16:01:58 - INFO - __main__ -   Num steps = 20
+04/27/2021 16:01:58 - INFO - __main__ -   Batch size = 512
+04/27/2021 16:02:06 - INFO - __main__ - 
+
+04/27/2021 16:02:06 - INFO - __main__ - Validation Results
+04/27/2021 16:02:06 - INFO - __main__ - Global Steps: 3300
+04/27/2021 16:02:06 - INFO - __main__ - Valid Loss: 3.21242
+04/27/2021 16:02:06 - INFO - __main__ - Valid Accuracy: 0.22360
+04/27/2021 16:02:18 - INFO - __main__ - ***** Running Validation *****
+04/27/2021 16:02:18 - INFO - __main__ -   Num steps = 20
+04/27/2021 16:02:18 - INFO - __main__ -   Batch size = 512
+04/27/2021 16:02:26 - INFO - __main__ - 
+
+04/27/2021 16:02:26 - INFO - __main__ - Validation Results
+04/27/2021 16:02:26 - INFO - __main__ - Global Steps: 3400
+04/27/2021 16:02:26 - INFO - __main__ - Valid Loss: 3.16795
+04/27/2021 16:02:26 - INFO - __main__ - Valid Accuracy: 0.23140
+04/27/2021 16:02:27 - INFO - __main__ - Saved model checkpoint to [DIR: output]
+04/27/2021 16:02:40 - INFO - __main__ - ***** Running Validation *****
+04/27/2021 16:02:40 - INFO - __main__ -   Num steps = 20
+04/27/2021 16:02:40 - INFO - __main__ -   Batch size = 512
+04/27/2021 16:02:48 - INFO - __main__ - 
+
+04/27/2021 16:02:48 - INFO - __main__ - Validation Results
+04/27/2021 16:02:48 - INFO - __main__ - Global Steps: 3500
+04/27/2021 16:02:48 - INFO - __main__ - Valid Loss: 3.16432
+04/27/2021 16:02:48 - INFO - __main__ - Valid Accuracy: 0.23610
+04/27/2021 16:02:49 - INFO - __main__ - Saved model checkpoint to [DIR: output]
+04/27/2021 16:03:02 - INFO - __main__ - ***** Running Validation *****
+04/27/2021 16:03:02 - INFO - __main__ -   Num steps = 20
+04/27/2021 16:03:02 - INFO - __main__ -   Batch size = 512
+04/27/2021 16:03:10 - INFO - __main__ - 
+
+04/27/2021 16:03:10 - INFO - __main__ - Validation Results
+04/27/2021 16:03:10 - INFO - __main__ - Global Steps: 3600
+04/27/2021 16:03:10 - INFO - __main__ - Valid Loss: 3.12955
+04/27/2021 16:03:10 - INFO - __main__ - Valid Accuracy: 0.24130
+04/27/2021 16:03:11 - INFO - __main__ - Saved model checkpoint to [DIR: output]
+04/27/2021 16:03:24 - INFO - __main__ - ***** Running Validation *****
+04/27/2021 16:03:24 - INFO - __main__ -   Num steps = 20
+04/27/2021 16:03:24 - INFO - __main__ -   Batch size = 512
+04/27/2021 16:03:32 - INFO - __main__ - 
+
+04/27/2021 16:03:32 - INFO - __main__ - Validation Results
+04/27/2021 16:03:32 - INFO - __main__ - Global Steps: 3700
+04/27/2021 16:03:32 - INFO - __main__ - Valid Loss: 3.14234
+04/27/2021 16:03:32 - INFO - __main__ - Valid Accuracy: 0.23790
+04/27/2021 16:03:45 - INFO - __main__ - ***** Running Validation *****
+04/27/2021 16:03:45 - INFO - __main__ -   Num steps = 20
+04/27/2021 16:03:45 - INFO - __main__ -   Batch size = 512
+04/27/2021 16:03:53 - INFO - __main__ - 
+
+04/27/2021 16:03:53 - INFO - __main__ - Validation Results
+04/27/2021 16:03:53 - INFO - __main__ - Global Steps: 3800
+04/27/2021 16:03:53 - INFO - __main__ - Valid Loss: 3.12786
+04/27/2021 16:03:53 - INFO - __main__ - Valid Accuracy: 0.23880
+04/27/2021 16:04:05 - INFO - __main__ - ***** Running Validation *****
+04/27/2021 16:04:05 - INFO - __main__ -   Num steps = 20
+04/27/2021 16:04:05 - INFO - __main__ -   Batch size = 512
+04/27/2021 16:04:14 - INFO - __main__ - 
+
+04/27/2021 16:04:14 - INFO - __main__ - Validation Results
+04/27/2021 16:04:14 - INFO - __main__ - Global Steps: 3900
+04/27/2021 16:04:14 - INFO - __main__ - Valid Loss: 3.10390
+04/27/2021 16:04:14 - INFO - __main__ - Valid Accuracy: 0.24470
+04/27/2021 16:04:15 - INFO - __main__ - Saved model checkpoint to [DIR: output]
+04/27/2021 16:04:29 - INFO - __main__ - ***** Running Validation *****
+04/27/2021 16:04:29 - INFO - __main__ -   Num steps = 20
+04/27/2021 16:04:29 - INFO - __main__ -   Batch size = 512
+04/27/2021 16:04:36 - INFO - __main__ - 
+
+04/27/2021 16:04:36 - INFO - __main__ - Validation Results
+04/27/2021 16:04:36 - INFO - __main__ - Global Steps: 4000
+04/27/2021 16:04:36 - INFO - __main__ - Valid Loss: 3.10379
+04/27/2021 16:04:36 - INFO - __main__ - Valid Accuracy: 0.24930
+04/27/2021 16:04:37 - INFO - __main__ - Saved model checkpoint to [DIR: output]
+04/27/2021 16:04:50 - INFO - __main__ - ***** Running Validation *****
+04/27/2021 16:04:50 - INFO - __main__ -   Num steps = 20
+04/27/2021 16:04:50 - INFO - __main__ -   Batch size = 512
+04/27/2021 16:04:58 - INFO - __main__ - 
+
+04/27/2021 16:04:58 - INFO - __main__ - Validation Results
+04/27/2021 16:04:58 - INFO - __main__ - Global Steps: 4100
+04/27/2021 16:04:58 - INFO - __main__ - Valid Loss: 3.12796
+04/27/2021 16:04:58 - INFO - __main__ - Valid Accuracy: 0.24350
+04/27/2021 16:05:10 - INFO - __main__ - ***** Running Validation *****
+04/27/2021 16:05:10 - INFO - __main__ -   Num steps = 20
+04/27/2021 16:05:10 - INFO - __main__ -   Batch size = 512
+04/27/2021 16:05:18 - INFO - __main__ - 
+
+04/27/2021 16:05:18 - INFO - __main__ - Validation Results
+04/27/2021 16:05:18 - INFO - __main__ - Global Steps: 4200
+04/27/2021 16:05:18 - INFO - __main__ - Valid Loss: 3.08905
+04/27/2021 16:05:18 - INFO - __main__ - Valid Accuracy: 0.25090
+04/27/2021 16:05:18 - INFO - __main__ - Saved model checkpoint to [DIR: output]
+04/27/2021 16:05:31 - INFO - __main__ - ***** Running Validation *****
+04/27/2021 16:05:31 - INFO - __main__ -   Num steps = 20
+04/27/2021 16:05:31 - INFO - __main__ -   Batch size = 512
+04/27/2021 16:05:38 - INFO - __main__ - 
+
+04/27/2021 16:05:38 - INFO - __main__ - Validation Results
+04/27/2021 16:05:38 - INFO - __main__ - Global Steps: 4300
+04/27/2021 16:05:38 - INFO - __main__ - Valid Loss: 3.10551
+04/27/2021 16:05:38 - INFO - __main__ - Valid Accuracy: 0.25270
+04/27/2021 16:05:39 - INFO - __main__ - Saved model checkpoint to [DIR: output]
+04/27/2021 16:05:53 - INFO - __main__ - ***** Running Validation *****
+04/27/2021 16:05:53 - INFO - __main__ -   Num steps = 20
+04/27/2021 16:05:53 - INFO - __main__ -   Batch size = 512
+04/27/2021 16:06:00 - INFO - __main__ - 
+
+04/27/2021 16:06:00 - INFO - __main__ - Validation Results
+04/27/2021 16:06:00 - INFO - __main__ - Global Steps: 4400
+04/27/2021 16:06:00 - INFO - __main__ - Valid Loss: 3.06455
+04/27/2021 16:06:00 - INFO - __main__ - Valid Accuracy: 0.25380
+04/27/2021 16:06:01 - INFO - __main__ - Saved model checkpoint to [DIR: output]
+04/27/2021 16:06:14 - INFO - __main__ - ***** Running Validation *****
+04/27/2021 16:06:14 - INFO - __main__ -   Num steps = 20
+04/27/2021 16:06:14 - INFO - __main__ -   Batch size = 512
+04/27/2021 16:06:20 - INFO - __main__ - 
+
+04/27/2021 16:06:20 - INFO - __main__ - Validation Results
+04/27/2021 16:06:20 - INFO - __main__ - Global Steps: 4500
+04/27/2021 16:06:20 - INFO - __main__ - Valid Loss: 3.05957
+04/27/2021 16:06:20 - INFO - __main__ - Valid Accuracy: 0.25110
+04/27/2021 16:06:33 - INFO - __main__ - ***** Running Validation *****
+04/27/2021 16:06:33 - INFO - __main__ -   Num steps = 20
+04/27/2021 16:06:33 - INFO - __main__ -   Batch size = 512
+04/27/2021 16:06:40 - INFO - __main__ - 
+
+04/27/2021 16:06:40 - INFO - __main__ - Validation Results
+04/27/2021 16:06:40 - INFO - __main__ - Global Steps: 4600
+04/27/2021 16:06:40 - INFO - __main__ - Valid Loss: 3.03925
+04/27/2021 16:06:40 - INFO - __main__ - Valid Accuracy: 0.26140
+04/27/2021 16:06:41 - INFO - __main__ - Saved model checkpoint to [DIR: output]
+04/27/2021 16:06:55 - INFO - __main__ - ***** Running Validation *****
+04/27/2021 16:06:55 - INFO - __main__ -   Num steps = 20
+04/27/2021 16:06:55 - INFO - __main__ -   Batch size = 512
+04/27/2021 16:07:01 - INFO - __main__ - 
+
+04/27/2021 16:07:01 - INFO - __main__ - Validation Results
+04/27/2021 16:07:01 - INFO - __main__ - Global Steps: 4700
+04/27/2021 16:07:01 - INFO - __main__ - Valid Loss: 3.03781
+04/27/2021 16:07:01 - INFO - __main__ - Valid Accuracy: 0.26260
+04/27/2021 16:07:02 - INFO - __main__ - Saved model checkpoint to [DIR: output]
+04/27/2021 16:07:15 - INFO - __main__ - ***** Running Validation *****
+04/27/2021 16:07:15 - INFO - __main__ -   Num steps = 20
+04/27/2021 16:07:15 - INFO - __main__ -   Batch size = 512
+04/27/2021 16:07:22 - INFO - __main__ - 
+
+04/27/2021 16:07:22 - INFO - __main__ - Validation Results
+04/27/2021 16:07:22 - INFO - __main__ - Global Steps: 4800
+04/27/2021 16:07:22 - INFO - __main__ - Valid Loss: 3.02609
+04/27/2021 16:07:22 - INFO - __main__ - Valid Accuracy: 0.26540
+04/27/2021 16:07:23 - INFO - __main__ - Saved model checkpoint to [DIR: output]
+04/27/2021 16:07:36 - INFO - __main__ - ***** Running Validation *****
+04/27/2021 16:07:36 - INFO - __main__ -   Num steps = 20
+04/27/2021 16:07:36 - INFO - __main__ -   Batch size = 512
+04/27/2021 16:07:43 - INFO - __main__ - 
+
+04/27/2021 16:07:43 - INFO - __main__ - Validation Results
+04/27/2021 16:07:43 - INFO - __main__ - Global Steps: 4900
+04/27/2021 16:07:43 - INFO - __main__ - Valid Loss: 3.02061
+04/27/2021 16:07:43 - INFO - __main__ - Valid Accuracy: 0.26030
+04/27/2021 16:07:56 - INFO - __main__ - ***** Running Validation *****
+04/27/2021 16:07:56 - INFO - __main__ -   Num steps = 20
+04/27/2021 16:07:56 - INFO - __main__ -   Batch size = 512
+04/27/2021 16:08:02 - INFO - __main__ - 
+
+04/27/2021 16:08:02 - INFO - __main__ - Validation Results
+04/27/2021 16:08:02 - INFO - __main__ - Global Steps: 5000
+04/27/2021 16:08:02 - INFO - __main__ - Valid Loss: 3.00688
+04/27/2021 16:08:02 - INFO - __main__ - Valid Accuracy: 0.26550
+04/27/2021 16:08:03 - INFO - __main__ - Saved model checkpoint to [DIR: output]
+04/27/2021 16:08:17 - INFO - __main__ - ***** Running Validation *****
+04/27/2021 16:08:17 - INFO - __main__ -   Num steps = 20
+04/27/2021 16:08:17 - INFO - __main__ -   Batch size = 512
+04/27/2021 16:08:24 - INFO - __main__ - 
+
+04/27/2021 16:08:24 - INFO - __main__ - Validation Results
+04/27/2021 16:08:24 - INFO - __main__ - Global Steps: 5100
+04/27/2021 16:08:24 - INFO - __main__ - Valid Loss: 2.98958
+04/27/2021 16:08:24 - INFO - __main__ - Valid Accuracy: 0.26970
+04/27/2021 16:08:25 - INFO - __main__ - Saved model checkpoint to [DIR: output]
+04/27/2021 16:08:38 - INFO - __main__ - ***** Running Validation *****
+04/27/2021 16:08:38 - INFO - __main__ -   Num steps = 20
+04/27/2021 16:08:38 - INFO - __main__ -   Batch size = 512
+04/27/2021 16:08:44 - INFO - __main__ - 
+
+04/27/2021 16:08:44 - INFO - __main__ - Validation Results
+04/27/2021 16:08:44 - INFO - __main__ - Global Steps: 5200
+04/27/2021 16:08:44 - INFO - __main__ - Valid Loss: 2.98913
+04/27/2021 16:08:44 - INFO - __main__ - Valid Accuracy: 0.26670
+04/27/2021 16:08:56 - INFO - __main__ - ***** Running Validation *****
+04/27/2021 16:08:56 - INFO - __main__ -   Num steps = 20
+04/27/2021 16:08:56 - INFO - __main__ -   Batch size = 512
+04/27/2021 16:09:04 - INFO - __main__ - 
+
+04/27/2021 16:09:04 - INFO - __main__ - Validation Results
+04/27/2021 16:09:04 - INFO - __main__ - Global Steps: 5300
+04/27/2021 16:09:04 - INFO - __main__ - Valid Loss: 2.94731
+04/27/2021 16:09:04 - INFO - __main__ - Valid Accuracy: 0.28160
+04/27/2021 16:09:05 - INFO - __main__ - Saved model checkpoint to [DIR: output]
+04/27/2021 16:09:18 - INFO - __main__ - ***** Running Validation *****
+04/27/2021 16:09:18 - INFO - __main__ -   Num steps = 20
+04/27/2021 16:09:18 - INFO - __main__ -   Batch size = 512
+04/27/2021 16:09:26 - INFO - __main__ - 
+
+04/27/2021 16:09:26 - INFO - __main__ - Validation Results
+04/27/2021 16:09:26 - INFO - __main__ - Global Steps: 5400
+04/27/2021 16:09:26 - INFO - __main__ - Valid Loss: 2.98405
+04/27/2021 16:09:26 - INFO - __main__ - Valid Accuracy: 0.27150
+04/27/2021 16:09:39 - INFO - __main__ - ***** Running Validation *****
+04/27/2021 16:09:39 - INFO - __main__ -   Num steps = 20
+04/27/2021 16:09:39 - INFO - __main__ -   Batch size = 512
+04/27/2021 16:09:47 - INFO - __main__ - 
+
+04/27/2021 16:09:47 - INFO - __main__ - Validation Results
+04/27/2021 16:09:47 - INFO - __main__ - Global Steps: 5500
+04/27/2021 16:09:47 - INFO - __main__ - Valid Loss: 2.97869
+04/27/2021 16:09:47 - INFO - __main__ - Valid Accuracy: 0.26520
+04/27/2021 16:09:59 - INFO - __main__ - ***** Running Validation *****
+04/27/2021 16:09:59 - INFO - __main__ -   Num steps = 20
+04/27/2021 16:09:59 - INFO - __main__ -   Batch size = 512
+04/27/2021 16:10:07 - INFO - __main__ - 
+
+04/27/2021 16:10:07 - INFO - __main__ - Validation Results
+04/27/2021 16:10:07 - INFO - __main__ - Global Steps: 5600
+04/27/2021 16:10:07 - INFO - __main__ - Valid Loss: 2.96442
+04/27/2021 16:10:07 - INFO - __main__ - Valid Accuracy: 0.27370
+04/27/2021 16:10:20 - INFO - __main__ - ***** Running Validation *****
+04/27/2021 16:10:20 - INFO - __main__ -   Num steps = 20
+04/27/2021 16:10:20 - INFO - __main__ -   Batch size = 512
+04/27/2021 16:10:27 - INFO - __main__ - 
+
+04/27/2021 16:10:27 - INFO - __main__ - Validation Results
+04/27/2021 16:10:27 - INFO - __main__ - Global Steps: 5700
+04/27/2021 16:10:27 - INFO - __main__ - Valid Loss: 2.96706
+04/27/2021 16:10:27 - INFO - __main__ - Valid Accuracy: 0.27730
+04/27/2021 16:10:40 - INFO - __main__ - ***** Running Validation *****
+04/27/2021 16:10:40 - INFO - __main__ -   Num steps = 20
+04/27/2021 16:10:40 - INFO - __main__ -   Batch size = 512
+04/27/2021 16:10:47 - INFO - __main__ - 
+
+04/27/2021 16:10:47 - INFO - __main__ - Validation Results
+04/27/2021 16:10:47 - INFO - __main__ - Global Steps: 5800
+04/27/2021 16:10:47 - INFO - __main__ - Valid Loss: 2.93841
+04/27/2021 16:10:47 - INFO - __main__ - Valid Accuracy: 0.27870
+04/27/2021 16:11:00 - INFO - __main__ - ***** Running Validation *****
+04/27/2021 16:11:00 - INFO - __main__ -   Num steps = 20
+04/27/2021 16:11:00 - INFO - __main__ -   Batch size = 512
+04/27/2021 16:11:07 - INFO - __main__ - 
+
+04/27/2021 16:11:07 - INFO - __main__ - Validation Results
+04/27/2021 16:11:07 - INFO - __main__ - Global Steps: 5900
+04/27/2021 16:11:07 - INFO - __main__ - Valid Loss: 2.91940
+04/27/2021 16:11:07 - INFO - __main__ - Valid Accuracy: 0.28220
+04/27/2021 16:11:08 - INFO - __main__ - Saved model checkpoint to [DIR: output]
+04/27/2021 16:11:21 - INFO - __main__ - ***** Running Validation *****
+04/27/2021 16:11:21 - INFO - __main__ -   Num steps = 20
+04/27/2021 16:11:21 - INFO - __main__ -   Batch size = 512
+04/27/2021 16:11:28 - INFO - __main__ - 
+
+04/27/2021 16:11:28 - INFO - __main__ - Validation Results
+04/27/2021 16:11:28 - INFO - __main__ - Global Steps: 6000
+04/27/2021 16:11:28 - INFO - __main__ - Valid Loss: 2.92058
+04/27/2021 16:11:28 - INFO - __main__ - Valid Accuracy: 0.28190
+04/27/2021 16:11:42 - INFO - __main__ - ***** Running Validation *****
+04/27/2021 16:11:42 - INFO - __main__ -   Num steps = 20
+04/27/2021 16:11:42 - INFO - __main__ -   Batch size = 512
+04/27/2021 16:11:49 - INFO - __main__ - 
+
+04/27/2021 16:11:49 - INFO - __main__ - Validation Results
+04/27/2021 16:11:49 - INFO - __main__ - Global Steps: 6100
+04/27/2021 16:11:49 - INFO - __main__ - Valid Loss: 2.91995
+04/27/2021 16:11:49 - INFO - __main__ - Valid Accuracy: 0.28160
+04/27/2021 16:12:02 - INFO - __main__ - ***** Running Validation *****
+04/27/2021 16:12:02 - INFO - __main__ -   Num steps = 20
+04/27/2021 16:12:02 - INFO - __main__ -   Batch size = 512
+04/27/2021 16:12:08 - INFO - __main__ - 
+
+04/27/2021 16:12:08 - INFO - __main__ - Validation Results
+04/27/2021 16:12:08 - INFO - __main__ - Global Steps: 6200
+04/27/2021 16:12:08 - INFO - __main__ - Valid Loss: 2.90707
+04/27/2021 16:12:08 - INFO - __main__ - Valid Accuracy: 0.29110
+04/27/2021 16:12:09 - INFO - __main__ - Saved model checkpoint to [DIR: output]
+04/27/2021 16:12:23 - INFO - __main__ - ***** Running Validation *****
+04/27/2021 16:12:23 - INFO - __main__ -   Num steps = 20
+04/27/2021 16:12:23 - INFO - __main__ -   Batch size = 512
+04/27/2021 16:12:31 - INFO - __main__ - 
+
+04/27/2021 16:12:31 - INFO - __main__ - Validation Results
+04/27/2021 16:12:31 - INFO - __main__ - Global Steps: 6300
+04/27/2021 16:12:31 - INFO - __main__ - Valid Loss: 2.89971
+04/27/2021 16:12:31 - INFO - __main__ - Valid Accuracy: 0.29040
+04/27/2021 16:12:44 - INFO - __main__ - ***** Running Validation *****
+04/27/2021 16:12:44 - INFO - __main__ -   Num steps = 20
+04/27/2021 16:12:44 - INFO - __main__ -   Batch size = 512
+04/27/2021 16:12:51 - INFO - __main__ - 
+
+04/27/2021 16:12:51 - INFO - __main__ - Validation Results
+04/27/2021 16:12:51 - INFO - __main__ - Global Steps: 6400
+04/27/2021 16:12:51 - INFO - __main__ - Valid Loss: 2.88464
+04/27/2021 16:12:51 - INFO - __main__ - Valid Accuracy: 0.29080
+04/27/2021 16:13:04 - INFO - __main__ - ***** Running Validation *****
+04/27/2021 16:13:04 - INFO - __main__ -   Num steps = 20
+04/27/2021 16:13:04 - INFO - __main__ -   Batch size = 512
+04/27/2021 16:13:11 - INFO - __main__ - 
+
+04/27/2021 16:13:11 - INFO - __main__ - Validation Results
+04/27/2021 16:13:11 - INFO - __main__ - Global Steps: 6500
+04/27/2021 16:13:11 - INFO - __main__ - Valid Loss: 2.89489
+04/27/2021 16:13:11 - INFO - __main__ - Valid Accuracy: 0.29020
+04/27/2021 16:13:24 - INFO - __main__ - ***** Running Validation *****
+04/27/2021 16:13:24 - INFO - __main__ -   Num steps = 20
+04/27/2021 16:13:24 - INFO - __main__ -   Batch size = 512
+04/27/2021 16:13:30 - INFO - __main__ - 
+
+04/27/2021 16:13:30 - INFO - __main__ - Validation Results
+04/27/2021 16:13:30 - INFO - __main__ - Global Steps: 6600
+04/27/2021 16:13:30 - INFO - __main__ - Valid Loss: 2.85828
+04/27/2021 16:13:30 - INFO - __main__ - Valid Accuracy: 0.30020
+04/27/2021 16:13:32 - INFO - __main__ - Saved model checkpoint to [DIR: output]
+04/27/2021 16:13:45 - INFO - __main__ - ***** Running Validation *****
+04/27/2021 16:13:45 - INFO - __main__ -   Num steps = 20
+04/27/2021 16:13:45 - INFO - __main__ -   Batch size = 512
+04/27/2021 16:13:52 - INFO - __main__ - 
+
+04/27/2021 16:13:52 - INFO - __main__ - Validation Results
+04/27/2021 16:13:52 - INFO - __main__ - Global Steps: 6700
+04/27/2021 16:13:52 - INFO - __main__ - Valid Loss: 2.83783
+04/27/2021 16:13:52 - INFO - __main__ - Valid Accuracy: 0.30580
+04/27/2021 16:13:54 - INFO - __main__ - Saved model checkpoint to [DIR: output]
+04/27/2021 16:14:07 - INFO - __main__ - ***** Running Validation *****
+04/27/2021 16:14:07 - INFO - __main__ -   Num steps = 20
+04/27/2021 16:14:07 - INFO - __main__ -   Batch size = 512
+04/27/2021 16:14:14 - INFO - __main__ - 
+
+04/27/2021 16:14:14 - INFO - __main__ - Validation Results
+04/27/2021 16:14:14 - INFO - __main__ - Global Steps: 6800
+04/27/2021 16:14:14 - INFO - __main__ - Valid Loss: 2.87095
+04/27/2021 16:14:14 - INFO - __main__ - Valid Accuracy: 0.29010
+04/27/2021 16:14:27 - INFO - __main__ - ***** Running Validation *****
+04/27/2021 16:14:27 - INFO - __main__ -   Num steps = 20
+04/27/2021 16:14:27 - INFO - __main__ -   Batch size = 512
+04/27/2021 16:14:34 - INFO - __main__ - 
+
+04/27/2021 16:14:34 - INFO - __main__ - Validation Results
+04/27/2021 16:14:34 - INFO - __main__ - Global Steps: 6900
+04/27/2021 16:14:34 - INFO - __main__ - Valid Loss: 2.85196
+04/27/2021 16:14:34 - INFO - __main__ - Valid Accuracy: 0.30480
+04/27/2021 16:14:47 - INFO - __main__ - ***** Running Validation *****
+04/27/2021 16:14:47 - INFO - __main__ -   Num steps = 20
+04/27/2021 16:14:47 - INFO - __main__ -   Batch size = 512
+04/27/2021 16:14:53 - INFO - __main__ - 
+
+04/27/2021 16:14:53 - INFO - __main__ - Validation Results
+04/27/2021 16:14:53 - INFO - __main__ - Global Steps: 7000
+04/27/2021 16:14:53 - INFO - __main__ - Valid Loss: 2.86106
+04/27/2021 16:14:53 - INFO - __main__ - Valid Accuracy: 0.29950
+04/27/2021 16:15:07 - INFO - __main__ - ***** Running Validation *****
+04/27/2021 16:15:07 - INFO - __main__ -   Num steps = 20
+04/27/2021 16:15:07 - INFO - __main__ -   Batch size = 512
+04/27/2021 16:15:14 - INFO - __main__ - 
+
+04/27/2021 16:15:14 - INFO - __main__ - Validation Results
+04/27/2021 16:15:14 - INFO - __main__ - Global Steps: 7100
+04/27/2021 16:15:14 - INFO - __main__ - Valid Loss: 2.82668
+04/27/2021 16:15:14 - INFO - __main__ - Valid Accuracy: 0.30800
+04/27/2021 16:15:15 - INFO - __main__ - Saved model checkpoint to [DIR: output]
+04/27/2021 16:15:28 - INFO - __main__ - ***** Running Validation *****
+04/27/2021 16:15:28 - INFO - __main__ -   Num steps = 20
+04/27/2021 16:15:28 - INFO - __main__ -   Batch size = 512
+04/27/2021 16:15:35 - INFO - __main__ - 
+
+04/27/2021 16:15:35 - INFO - __main__ - Validation Results
+04/27/2021 16:15:35 - INFO - __main__ - Global Steps: 7200
+04/27/2021 16:15:35 - INFO - __main__ - Valid Loss: 2.82197
+04/27/2021 16:15:35 - INFO - __main__ - Valid Accuracy: 0.30640
+04/27/2021 16:15:48 - INFO - __main__ - ***** Running Validation *****
+04/27/2021 16:15:48 - INFO - __main__ -   Num steps = 20
+04/27/2021 16:15:48 - INFO - __main__ -   Batch size = 512
+04/27/2021 16:15:55 - INFO - __main__ - 
+
+04/27/2021 16:15:55 - INFO - __main__ - Validation Results
+04/27/2021 16:15:55 - INFO - __main__ - Global Steps: 7300
+04/27/2021 16:15:55 - INFO - __main__ - Valid Loss: 2.87493
+04/27/2021 16:15:55 - INFO - __main__ - Valid Accuracy: 0.29830
+04/27/2021 16:16:09 - INFO - __main__ - ***** Running Validation *****
+04/27/2021 16:16:09 - INFO - __main__ -   Num steps = 20
+04/27/2021 16:16:09 - INFO - __main__ -   Batch size = 512
+04/27/2021 16:16:15 - INFO - __main__ - 
+
+04/27/2021 16:16:15 - INFO - __main__ - Validation Results
+04/27/2021 16:16:15 - INFO - __main__ - Global Steps: 7400
+04/27/2021 16:16:15 - INFO - __main__ - Valid Loss: 2.82912
+04/27/2021 16:16:15 - INFO - __main__ - Valid Accuracy: 0.30890
+04/27/2021 16:16:16 - INFO - __main__ - Saved model checkpoint to [DIR: output]
+04/27/2021 16:16:30 - INFO - __main__ - ***** Running Validation *****
+04/27/2021 16:16:30 - INFO - __main__ -   Num steps = 20
+04/27/2021 16:16:30 - INFO - __main__ -   Batch size = 512
+04/27/2021 16:16:37 - INFO - __main__ - 
+
+04/27/2021 16:16:37 - INFO - __main__ - Validation Results
+04/27/2021 16:16:37 - INFO - __main__ - Global Steps: 7500
+04/27/2021 16:16:37 - INFO - __main__ - Valid Loss: 2.87400
+04/27/2021 16:16:37 - INFO - __main__ - Valid Accuracy: 0.30490
+04/27/2021 16:16:50 - INFO - __main__ - ***** Running Validation *****
+04/27/2021 16:16:50 - INFO - __main__ -   Num steps = 20
+04/27/2021 16:16:50 - INFO - __main__ -   Batch size = 512
+04/27/2021 16:16:57 - INFO - __main__ - 
+
+04/27/2021 16:16:57 - INFO - __main__ - Validation Results
+04/27/2021 16:16:57 - INFO - __main__ - Global Steps: 7600
+04/27/2021 16:16:57 - INFO - __main__ - Valid Loss: 2.78629
+04/27/2021 16:16:57 - INFO - __main__ - Valid Accuracy: 0.31450
+04/27/2021 16:16:58 - INFO - __main__ - Saved model checkpoint to [DIR: output]
+04/27/2021 16:17:11 - INFO - __main__ - ***** Running Validation *****
+04/27/2021 16:17:11 - INFO - __main__ -   Num steps = 20
+04/27/2021 16:17:11 - INFO - __main__ -   Batch size = 512
+04/27/2021 16:17:18 - INFO - __main__ - 
+
+04/27/2021 16:17:18 - INFO - __main__ - Validation Results
+04/27/2021 16:17:18 - INFO - __main__ - Global Steps: 7700
+04/27/2021 16:17:18 - INFO - __main__ - Valid Loss: 2.82437
+04/27/2021 16:17:18 - INFO - __main__ - Valid Accuracy: 0.31240
+04/27/2021 16:17:31 - INFO - __main__ - ***** Running Validation *****
+04/27/2021 16:17:31 - INFO - __main__ -   Num steps = 20
+04/27/2021 16:17:31 - INFO - __main__ -   Batch size = 512
+04/27/2021 16:17:38 - INFO - __main__ - 
+
+04/27/2021 16:17:38 - INFO - __main__ - Validation Results
+04/27/2021 16:17:38 - INFO - __main__ - Global Steps: 7800
+04/27/2021 16:17:38 - INFO - __main__ - Valid Loss: 2.78228
+04/27/2021 16:17:38 - INFO - __main__ - Valid Accuracy: 0.31740
+04/27/2021 16:17:39 - INFO - __main__ - Saved model checkpoint to [DIR: output]
+04/27/2021 16:17:53 - INFO - __main__ - ***** Running Validation *****
+04/27/2021 16:17:53 - INFO - __main__ -   Num steps = 20
+04/27/2021 16:17:53 - INFO - __main__ -   Batch size = 512
+04/27/2021 16:18:00 - INFO - __main__ - 
+
+04/27/2021 16:18:00 - INFO - __main__ - Validation Results
+04/27/2021 16:18:00 - INFO - __main__ - Global Steps: 7900
+04/27/2021 16:18:00 - INFO - __main__ - Valid Loss: 2.78770
+04/27/2021 16:18:00 - INFO - __main__ - Valid Accuracy: 0.31740
+04/27/2021 16:18:13 - INFO - __main__ - ***** Running Validation *****
+04/27/2021 16:18:13 - INFO - __main__ -   Num steps = 20
+04/27/2021 16:18:13 - INFO - __main__ -   Batch size = 512
+04/27/2021 16:18:20 - INFO - __main__ - 
+
+04/27/2021 16:18:20 - INFO - __main__ - Validation Results
+04/27/2021 16:18:20 - INFO - __main__ - Global Steps: 8000
+04/27/2021 16:18:20 - INFO - __main__ - Valid Loss: 2.77629
+04/27/2021 16:18:20 - INFO - __main__ - Valid Accuracy: 0.31660
+04/27/2021 16:18:33 - INFO - __main__ - ***** Running Validation *****
+04/27/2021 16:18:33 - INFO - __main__ -   Num steps = 20
+04/27/2021 16:18:33 - INFO - __main__ -   Batch size = 512
+04/27/2021 16:18:40 - INFO - __main__ - 
+
+04/27/2021 16:18:40 - INFO - __main__ - Validation Results
+04/27/2021 16:18:40 - INFO - __main__ - Global Steps: 8100
+04/27/2021 16:18:40 - INFO - __main__ - Valid Loss: 2.77442
+04/27/2021 16:18:40 - INFO - __main__ - Valid Accuracy: 0.31970
+04/27/2021 16:18:42 - INFO - __main__ - Saved model checkpoint to [DIR: output]
+04/27/2021 16:18:54 - INFO - __main__ - ***** Running Validation *****
+04/27/2021 16:18:54 - INFO - __main__ -   Num steps = 20
+04/27/2021 16:18:54 - INFO - __main__ -   Batch size = 512
+04/27/2021 16:19:02 - INFO - __main__ - 
+
+04/27/2021 16:19:02 - INFO - __main__ - Validation Results
+04/27/2021 16:19:02 - INFO - __main__ - Global Steps: 8200
+04/27/2021 16:19:02 - INFO - __main__ - Valid Loss: 2.74072
+04/27/2021 16:19:02 - INFO - __main__ - Valid Accuracy: 0.32730
+04/27/2021 16:19:03 - INFO - __main__ - Saved model checkpoint to [DIR: output]
+04/27/2021 16:19:16 - INFO - __main__ - ***** Running Validation *****
+04/27/2021 16:19:16 - INFO - __main__ -   Num steps = 20
+04/27/2021 16:19:16 - INFO - __main__ -   Batch size = 512
+04/27/2021 16:19:24 - INFO - __main__ - 
+
+04/27/2021 16:19:24 - INFO - __main__ - Validation Results
+04/27/2021 16:19:24 - INFO - __main__ - Global Steps: 8300
+04/27/2021 16:19:24 - INFO - __main__ - Valid Loss: 2.77904
+04/27/2021 16:19:24 - INFO - __main__ - Valid Accuracy: 0.31970
+04/27/2021 16:19:37 - INFO - __main__ - ***** Running Validation *****
+04/27/2021 16:19:37 - INFO - __main__ -   Num steps = 20
+04/27/2021 16:19:37 - INFO - __main__ -   Batch size = 512
+04/27/2021 16:19:45 - INFO - __main__ - 
+
+04/27/2021 16:19:45 - INFO - __main__ - Validation Results
+04/27/2021 16:19:45 - INFO - __main__ - Global Steps: 8400
+04/27/2021 16:19:45 - INFO - __main__ - Valid Loss: 2.76598
+04/27/2021 16:19:45 - INFO - __main__ - Valid Accuracy: 0.32010
+04/27/2021 16:19:58 - INFO - __main__ - ***** Running Validation *****
+04/27/2021 16:19:58 - INFO - __main__ -   Num steps = 20
+04/27/2021 16:19:58 - INFO - __main__ -   Batch size = 512
+04/27/2021 16:20:06 - INFO - __main__ - 
+
+04/27/2021 16:20:06 - INFO - __main__ - Validation Results
+04/27/2021 16:20:06 - INFO - __main__ - Global Steps: 8500
+04/27/2021 16:20:06 - INFO - __main__ - Valid Loss: 2.77064
+04/27/2021 16:20:06 - INFO - __main__ - Valid Accuracy: 0.32060
+04/27/2021 16:20:18 - INFO - __main__ - ***** Running Validation *****
+04/27/2021 16:20:18 - INFO - __main__ -   Num steps = 20
+04/27/2021 16:20:18 - INFO - __main__ -   Batch size = 512
+04/27/2021 16:20:27 - INFO - __main__ - 
+
+04/27/2021 16:20:27 - INFO - __main__ - Validation Results
+04/27/2021 16:20:27 - INFO - __main__ - Global Steps: 8600
+04/27/2021 16:20:27 - INFO - __main__ - Valid Loss: 2.76021
+04/27/2021 16:20:27 - INFO - __main__ - Valid Accuracy: 0.32170
+04/27/2021 16:20:40 - INFO - __main__ - ***** Running Validation *****
+04/27/2021 16:20:40 - INFO - __main__ -   Num steps = 20
+04/27/2021 16:20:40 - INFO - __main__ -   Batch size = 512
+04/27/2021 16:20:48 - INFO - __main__ - 
+
+04/27/2021 16:20:48 - INFO - __main__ - Validation Results
+04/27/2021 16:20:48 - INFO - __main__ - Global Steps: 8700
+04/27/2021 16:20:48 - INFO - __main__ - Valid Loss: 2.73831
+04/27/2021 16:20:48 - INFO - __main__ - Valid Accuracy: 0.32810
+04/27/2021 16:20:48 - INFO - __main__ - Saved model checkpoint to [DIR: output]
+04/27/2021 16:21:01 - INFO - __main__ - ***** Running Validation *****
+04/27/2021 16:21:01 - INFO - __main__ -   Num steps = 20
+04/27/2021 16:21:01 - INFO - __main__ -   Batch size = 512
+04/27/2021 16:21:09 - INFO - __main__ - 
+
+04/27/2021 16:21:09 - INFO - __main__ - Validation Results
+04/27/2021 16:21:09 - INFO - __main__ - Global Steps: 8800
+04/27/2021 16:21:09 - INFO - __main__ - Valid Loss: 2.74591
+04/27/2021 16:21:09 - INFO - __main__ - Valid Accuracy: 0.32590
+04/27/2021 16:21:22 - INFO - __main__ - ***** Running Validation *****
+04/27/2021 16:21:22 - INFO - __main__ -   Num steps = 20
+04/27/2021 16:21:22 - INFO - __main__ -   Batch size = 512
+04/27/2021 16:21:30 - INFO - __main__ - 
+
+04/27/2021 16:21:30 - INFO - __main__ - Validation Results
+04/27/2021 16:21:30 - INFO - __main__ - Global Steps: 8900
+04/27/2021 16:21:30 - INFO - __main__ - Valid Loss: 2.70748
+04/27/2021 16:21:30 - INFO - __main__ - Valid Accuracy: 0.33600
+04/27/2021 16:21:30 - INFO - __main__ - Saved model checkpoint to [DIR: output]
+04/27/2021 16:21:43 - INFO - __main__ - ***** Running Validation *****
+04/27/2021 16:21:43 - INFO - __main__ -   Num steps = 20
+04/27/2021 16:21:43 - INFO - __main__ -   Batch size = 512
+04/27/2021 16:21:52 - INFO - __main__ - 
+
+04/27/2021 16:21:52 - INFO - __main__ - Validation Results
+04/27/2021 16:21:52 - INFO - __main__ - Global Steps: 9000
+04/27/2021 16:21:52 - INFO - __main__ - Valid Loss: 2.71406
+04/27/2021 16:21:52 - INFO - __main__ - Valid Accuracy: 0.32500
+04/27/2021 16:22:04 - INFO - __main__ - ***** Running Validation *****
+04/27/2021 16:22:04 - INFO - __main__ -   Num steps = 20
+04/27/2021 16:22:04 - INFO - __main__ -   Batch size = 512
+04/27/2021 16:22:12 - INFO - __main__ - 
+
+04/27/2021 16:22:12 - INFO - __main__ - Validation Results
+04/27/2021 16:22:12 - INFO - __main__ - Global Steps: 9100
+04/27/2021 16:22:12 - INFO - __main__ - Valid Loss: 2.74780
+04/27/2021 16:22:12 - INFO - __main__ - Valid Accuracy: 0.33160
+04/27/2021 16:22:24 - INFO - __main__ - ***** Running Validation *****
+04/27/2021 16:22:24 - INFO - __main__ -   Num steps = 20
+04/27/2021 16:22:24 - INFO - __main__ -   Batch size = 512
+04/27/2021 16:22:31 - INFO - __main__ - 
+
+04/27/2021 16:22:31 - INFO - __main__ - Validation Results
+04/27/2021 16:22:31 - INFO - __main__ - Global Steps: 9200
+04/27/2021 16:22:31 - INFO - __main__ - Valid Loss: 2.72344
+04/27/2021 16:22:31 - INFO - __main__ - Valid Accuracy: 0.33500
+04/27/2021 16:22:44 - INFO - __main__ - ***** Running Validation *****
+04/27/2021 16:22:44 - INFO - __main__ -   Num steps = 20
+04/27/2021 16:22:44 - INFO - __main__ -   Batch size = 512
+04/27/2021 16:22:51 - INFO - __main__ - 
+
+04/27/2021 16:22:51 - INFO - __main__ - Validation Results
+04/27/2021 16:22:51 - INFO - __main__ - Global Steps: 9300
+04/27/2021 16:22:51 - INFO - __main__ - Valid Loss: 2.71244
+04/27/2021 16:22:51 - INFO - __main__ - Valid Accuracy: 0.33400
+04/27/2021 16:23:05 - INFO - __main__ - ***** Running Validation *****
+04/27/2021 16:23:05 - INFO - __main__ -   Num steps = 20
+04/27/2021 16:23:05 - INFO - __main__ -   Batch size = 512
+04/27/2021 16:23:11 - INFO - __main__ - 
+
+04/27/2021 16:23:11 - INFO - __main__ - Validation Results
+04/27/2021 16:23:11 - INFO - __main__ - Global Steps: 9400
+04/27/2021 16:23:11 - INFO - __main__ - Valid Loss: 2.69711
+04/27/2021 16:23:11 - INFO - __main__ - Valid Accuracy: 0.34380
+04/27/2021 16:23:13 - INFO - __main__ - Saved model checkpoint to [DIR: output]
+04/27/2021 16:23:26 - INFO - __main__ - ***** Running Validation *****
+04/27/2021 16:23:26 - INFO - __main__ -   Num steps = 20
+04/27/2021 16:23:26 - INFO - __main__ -   Batch size = 512
+04/27/2021 16:23:32 - INFO - __main__ - 
+
+04/27/2021 16:23:32 - INFO - __main__ - Validation Results
+04/27/2021 16:23:32 - INFO - __main__ - Global Steps: 9500
+04/27/2021 16:23:32 - INFO - __main__ - Valid Loss: 2.71646
+04/27/2021 16:23:32 - INFO - __main__ - Valid Accuracy: 0.33750
+04/27/2021 16:23:45 - INFO - __main__ - ***** Running Validation *****
+04/27/2021 16:23:45 - INFO - __main__ -   Num steps = 20
+04/27/2021 16:23:45 - INFO - __main__ -   Batch size = 512
+04/27/2021 16:23:52 - INFO - __main__ - 
+
+04/27/2021 16:23:52 - INFO - __main__ - Validation Results
+04/27/2021 16:23:52 - INFO - __main__ - Global Steps: 9600
+04/27/2021 16:23:52 - INFO - __main__ - Valid Loss: 2.68916
+04/27/2021 16:23:52 - INFO - __main__ - Valid Accuracy: 0.34010
+04/27/2021 16:24:05 - INFO - __main__ - ***** Running Validation *****
+04/27/2021 16:24:05 - INFO - __main__ -   Num steps = 20
+04/27/2021 16:24:05 - INFO - __main__ -   Batch size = 512
+04/27/2021 16:24:12 - INFO - __main__ - 
+
+04/27/2021 16:24:12 - INFO - __main__ - Validation Results
+04/27/2021 16:24:12 - INFO - __main__ - Global Steps: 9700
+04/27/2021 16:24:12 - INFO - __main__ - Valid Loss: 2.69126
+04/27/2021 16:24:12 - INFO - __main__ - Valid Accuracy: 0.34360
+04/27/2021 16:24:26 - INFO - __main__ - ***** Running Validation *****
+04/27/2021 16:24:26 - INFO - __main__ -   Num steps = 20
+04/27/2021 16:24:26 - INFO - __main__ -   Batch size = 512
+04/27/2021 16:24:32 - INFO - __main__ - 
+
+04/27/2021 16:24:32 - INFO - __main__ - Validation Results
+04/27/2021 16:24:32 - INFO - __main__ - Global Steps: 9800
+04/27/2021 16:24:32 - INFO - __main__ - Valid Loss: 2.66248
+04/27/2021 16:24:32 - INFO - __main__ - Valid Accuracy: 0.35320
+04/27/2021 16:24:34 - INFO - __main__ - Saved model checkpoint to [DIR: output]
+04/27/2021 16:24:47 - INFO - __main__ - ***** Running Validation *****
+04/27/2021 16:24:47 - INFO - __main__ -   Num steps = 20
+04/27/2021 16:24:47 - INFO - __main__ -   Batch size = 512
+04/27/2021 16:24:53 - INFO - __main__ - 
+
+04/27/2021 16:24:53 - INFO - __main__ - Validation Results
+04/27/2021 16:24:53 - INFO - __main__ - Global Steps: 9900
+04/27/2021 16:24:53 - INFO - __main__ - Valid Loss: 2.69715
+04/27/2021 16:24:53 - INFO - __main__ - Valid Accuracy: 0.34480
+04/27/2021 16:25:06 - INFO - __main__ - ***** Running Validation *****
+04/27/2021 16:25:06 - INFO - __main__ -   Num steps = 20
+04/27/2021 16:25:06 - INFO - __main__ -   Batch size = 512
+04/27/2021 16:25:13 - INFO - __main__ - 
+
+04/27/2021 16:25:13 - INFO - __main__ - Validation Results
+04/27/2021 16:25:13 - INFO - __main__ - Global Steps: 10000
+04/27/2021 16:25:13 - INFO - __main__ - Valid Loss: 2.68234
+04/27/2021 16:25:13 - INFO - __main__ - Valid Accuracy: 0.34010
+04/27/2021 16:25:26 - INFO - __main__ - ***** Running Validation *****
+04/27/2021 16:25:26 - INFO - __main__ -   Num steps = 20
+04/27/2021 16:25:26 - INFO - __main__ -   Batch size = 512
+04/27/2021 16:25:33 - INFO - __main__ - 
+
+04/27/2021 16:25:33 - INFO - __main__ - Validation Results
+04/27/2021 16:25:33 - INFO - __main__ - Global Steps: 10100
+04/27/2021 16:25:33 - INFO - __main__ - Valid Loss: 2.68133
+04/27/2021 16:25:33 - INFO - __main__ - Valid Accuracy: 0.34480
+04/27/2021 16:25:47 - INFO - __main__ - ***** Running Validation *****
+04/27/2021 16:25:47 - INFO - __main__ -   Num steps = 20
+04/27/2021 16:25:47 - INFO - __main__ -   Batch size = 512
+04/27/2021 16:25:53 - INFO - __main__ - 
+
+04/27/2021 16:25:53 - INFO - __main__ - Validation Results
+04/27/2021 16:25:53 - INFO - __main__ - Global Steps: 10200
+04/27/2021 16:25:53 - INFO - __main__ - Valid Loss: 2.70280
+04/27/2021 16:25:53 - INFO - __main__ - Valid Accuracy: 0.34360
+04/27/2021 16:26:07 - INFO - __main__ - ***** Running Validation *****
+04/27/2021 16:26:07 - INFO - __main__ -   Num steps = 20
+04/27/2021 16:26:07 - INFO - __main__ -   Batch size = 512
+04/27/2021 16:26:13 - INFO - __main__ - 
+
+04/27/2021 16:26:13 - INFO - __main__ - Validation Results
+04/27/2021 16:26:13 - INFO - __main__ - Global Steps: 10300
+04/27/2021 16:26:13 - INFO - __main__ - Valid Loss: 2.66735
+04/27/2021 16:26:13 - INFO - __main__ - Valid Accuracy: 0.35730
+04/27/2021 16:26:14 - INFO - __main__ - Saved model checkpoint to [DIR: output]
+04/27/2021 16:26:27 - INFO - __main__ - ***** Running Validation *****
+04/27/2021 16:26:27 - INFO - __main__ -   Num steps = 20
+04/27/2021 16:26:27 - INFO - __main__ -   Batch size = 512
+04/27/2021 16:26:34 - INFO - __main__ - 
+
+04/27/2021 16:26:34 - INFO - __main__ - Validation Results
+04/27/2021 16:26:34 - INFO - __main__ - Global Steps: 10400
+04/27/2021 16:26:34 - INFO - __main__ - Valid Loss: 2.65003
+04/27/2021 16:26:34 - INFO - __main__ - Valid Accuracy: 0.35230
+04/27/2021 16:26:47 - INFO - __main__ - ***** Running Validation *****
+04/27/2021 16:26:47 - INFO - __main__ -   Num steps = 20
+04/27/2021 16:26:47 - INFO - __main__ -   Batch size = 512
+04/27/2021 16:26:54 - INFO - __main__ - 
+
+04/27/2021 16:26:54 - INFO - __main__ - Validation Results
+04/27/2021 16:26:54 - INFO - __main__ - Global Steps: 10500
+04/27/2021 16:26:54 - INFO - __main__ - Valid Loss: 2.64703
+04/27/2021 16:26:54 - INFO - __main__ - Valid Accuracy: 0.35420
+04/27/2021 16:27:08 - INFO - __main__ - ***** Running Validation *****
+04/27/2021 16:27:08 - INFO - __main__ -   Num steps = 20
+04/27/2021 16:27:08 - INFO - __main__ -   Batch size = 512
+04/27/2021 16:27:14 - INFO - __main__ - 
+
+04/27/2021 16:27:14 - INFO - __main__ - Validation Results
+04/27/2021 16:27:14 - INFO - __main__ - Global Steps: 10600
+04/27/2021 16:27:14 - INFO - __main__ - Valid Loss: 2.68601
+04/27/2021 16:27:14 - INFO - __main__ - Valid Accuracy: 0.34890
+04/27/2021 16:27:28 - INFO - __main__ - ***** Running Validation *****
+04/27/2021 16:27:28 - INFO - __main__ -   Num steps = 20
+04/27/2021 16:27:28 - INFO - __main__ -   Batch size = 512
+04/27/2021 16:27:34 - INFO - __main__ - 
+
+04/27/2021 16:27:34 - INFO - __main__ - Validation Results
+04/27/2021 16:27:34 - INFO - __main__ - Global Steps: 10700
+04/27/2021 16:27:34 - INFO - __main__ - Valid Loss: 2.66065
+04/27/2021 16:27:34 - INFO - __main__ - Valid Accuracy: 0.35250
+04/27/2021 16:27:47 - INFO - __main__ - ***** Running Validation *****
+04/27/2021 16:27:47 - INFO - __main__ -   Num steps = 20
+04/27/2021 16:27:47 - INFO - __main__ -   Batch size = 512
+04/27/2021 16:27:54 - INFO - __main__ - 
+
+04/27/2021 16:27:54 - INFO - __main__ - Validation Results
+04/27/2021 16:27:54 - INFO - __main__ - Global Steps: 10800
+04/27/2021 16:27:54 - INFO - __main__ - Valid Loss: 2.64894
+04/27/2021 16:27:54 - INFO - __main__ - Valid Accuracy: 0.35640
+04/27/2021 16:28:07 - INFO - __main__ - ***** Running Validation *****
+04/27/2021 16:28:07 - INFO - __main__ -   Num steps = 20
+04/27/2021 16:28:07 - INFO - __main__ -   Batch size = 512
+04/27/2021 16:28:14 - INFO - __main__ - 
+
+04/27/2021 16:28:14 - INFO - __main__ - Validation Results
+04/27/2021 16:28:14 - INFO - __main__ - Global Steps: 10900
+04/27/2021 16:28:14 - INFO - __main__ - Valid Loss: 2.69963
+04/27/2021 16:28:14 - INFO - __main__ - Valid Accuracy: 0.34870
+04/27/2021 16:28:28 - INFO - __main__ - ***** Running Validation *****
+04/27/2021 16:28:28 - INFO - __main__ -   Num steps = 20
+04/27/2021 16:28:28 - INFO - __main__ -   Batch size = 512
+04/27/2021 16:28:34 - INFO - __main__ - 
+
+04/27/2021 16:28:34 - INFO - __main__ - Validation Results
+04/27/2021 16:28:34 - INFO - __main__ - Global Steps: 11000
+04/27/2021 16:28:34 - INFO - __main__ - Valid Loss: 2.65735
+04/27/2021 16:28:34 - INFO - __main__ - Valid Accuracy: 0.35920
+04/27/2021 16:28:35 - INFO - __main__ - Saved model checkpoint to [DIR: output]
+04/27/2021 16:28:49 - INFO - __main__ - ***** Running Validation *****
+04/27/2021 16:28:49 - INFO - __main__ -   Num steps = 20
+04/27/2021 16:28:49 - INFO - __main__ -   Batch size = 512
+04/27/2021 16:28:55 - INFO - __main__ - 
+
+04/27/2021 16:28:55 - INFO - __main__ - Validation Results
+04/27/2021 16:28:55 - INFO - __main__ - Global Steps: 11100
+04/27/2021 16:28:55 - INFO - __main__ - Valid Loss: 2.64082
+04/27/2021 16:28:55 - INFO - __main__ - Valid Accuracy: 0.36470
+04/27/2021 16:28:55 - INFO - __main__ - Saved model checkpoint to [DIR: output]
+04/27/2021 16:29:09 - INFO - __main__ - ***** Running Validation *****
+04/27/2021 16:29:09 - INFO - __main__ -   Num steps = 20
+04/27/2021 16:29:09 - INFO - __main__ -   Batch size = 512
+04/27/2021 16:29:15 - INFO - __main__ - 
+
+04/27/2021 16:29:15 - INFO - __main__ - Validation Results
+04/27/2021 16:29:15 - INFO - __main__ - Global Steps: 11200
+04/27/2021 16:29:15 - INFO - __main__ - Valid Loss: 2.65089
+04/27/2021 16:29:15 - INFO - __main__ - Valid Accuracy: 0.35500
+04/27/2021 16:29:29 - INFO - __main__ - ***** Running Validation *****
+04/27/2021 16:29:29 - INFO - __main__ -   Num steps = 20
+04/27/2021 16:29:29 - INFO - __main__ -   Batch size = 512
+04/27/2021 16:29:35 - INFO - __main__ - 
+
+04/27/2021 16:29:35 - INFO - __main__ - Validation Results
+04/27/2021 16:29:35 - INFO - __main__ - Global Steps: 11300
+04/27/2021 16:29:35 - INFO - __main__ - Valid Loss: 2.64867
+04/27/2021 16:29:35 - INFO - __main__ - Valid Accuracy: 0.35910
+04/27/2021 16:29:49 - INFO - __main__ - ***** Running Validation *****
+04/27/2021 16:29:49 - INFO - __main__ -   Num steps = 20
+04/27/2021 16:29:49 - INFO - __main__ -   Batch size = 512
+04/27/2021 16:29:56 - INFO - __main__ - 
+
+04/27/2021 16:29:56 - INFO - __main__ - Validation Results
+04/27/2021 16:29:56 - INFO - __main__ - Global Steps: 11400
+04/27/2021 16:29:56 - INFO - __main__ - Valid Loss: 2.62549
+04/27/2021 16:29:56 - INFO - __main__ - Valid Accuracy: 0.36100
+04/27/2021 16:30:09 - INFO - __main__ - ***** Running Validation *****
+04/27/2021 16:30:09 - INFO - __main__ -   Num steps = 20
+04/27/2021 16:30:09 - INFO - __main__ -   Batch size = 512
+04/27/2021 16:30:15 - INFO - __main__ - 
+
+04/27/2021 16:30:15 - INFO - __main__ - Validation Results
+04/27/2021 16:30:15 - INFO - __main__ - Global Steps: 11500
+04/27/2021 16:30:15 - INFO - __main__ - Valid Loss: 2.63550
+04/27/2021 16:30:15 - INFO - __main__ - Valid Accuracy: 0.36050
+04/27/2021 16:30:29 - INFO - __main__ - ***** Running Validation *****
+04/27/2021 16:30:29 - INFO - __main__ -   Num steps = 20
+04/27/2021 16:30:29 - INFO - __main__ -   Batch size = 512
+04/27/2021 16:30:35 - INFO - __main__ - 
+
+04/27/2021 16:30:35 - INFO - __main__ - Validation Results
+04/27/2021 16:30:35 - INFO - __main__ - Global Steps: 11600
+04/27/2021 16:30:35 - INFO - __main__ - Valid Loss: 2.62503
+04/27/2021 16:30:35 - INFO - __main__ - Valid Accuracy: 0.36310
+04/27/2021 16:30:49 - INFO - __main__ - ***** Running Validation *****
+04/27/2021 16:30:49 - INFO - __main__ -   Num steps = 20
+04/27/2021 16:30:49 - INFO - __main__ -   Batch size = 512
+04/27/2021 16:30:56 - INFO - __main__ - 
+
+04/27/2021 16:30:56 - INFO - __main__ - Validation Results
+04/27/2021 16:30:56 - INFO - __main__ - Global Steps: 11700
+04/27/2021 16:30:56 - INFO - __main__ - Valid Loss: 2.61883
+04/27/2021 16:30:56 - INFO - __main__ - Valid Accuracy: 0.36220
+04/27/2021 16:31:10 - INFO - __main__ - ***** Running Validation *****
+04/27/2021 16:31:10 - INFO - __main__ -   Num steps = 20
+04/27/2021 16:31:10 - INFO - __main__ -   Batch size = 512
+04/27/2021 16:31:16 - INFO - __main__ - 
+
+04/27/2021 16:31:16 - INFO - __main__ - Validation Results
+04/27/2021 16:31:16 - INFO - __main__ - Global Steps: 11800
+04/27/2021 16:31:16 - INFO - __main__ - Valid Loss: 2.62491
+04/27/2021 16:31:16 - INFO - __main__ - Valid Accuracy: 0.36200
+04/27/2021 16:31:30 - INFO - __main__ - ***** Running Validation *****
+04/27/2021 16:31:30 - INFO - __main__ -   Num steps = 20
+04/27/2021 16:31:30 - INFO - __main__ -   Batch size = 512
+04/27/2021 16:31:36 - INFO - __main__ - 
+
+04/27/2021 16:31:36 - INFO - __main__ - Validation Results
+04/27/2021 16:31:36 - INFO - __main__ - Global Steps: 11900
+04/27/2021 16:31:36 - INFO - __main__ - Valid Loss: 2.61756
+04/27/2021 16:31:36 - INFO - __main__ - Valid Accuracy: 0.36400
+04/27/2021 16:31:49 - INFO - __main__ - ***** Running Validation *****
+04/27/2021 16:31:49 - INFO - __main__ -   Num steps = 20
+04/27/2021 16:31:49 - INFO - __main__ -   Batch size = 512
+04/27/2021 16:31:56 - INFO - __main__ - 
+
+04/27/2021 16:31:56 - INFO - __main__ - Validation Results
+04/27/2021 16:31:56 - INFO - __main__ - Global Steps: 12000
+04/27/2021 16:31:56 - INFO - __main__ - Valid Loss: 2.58387
+04/27/2021 16:31:56 - INFO - __main__ - Valid Accuracy: 0.36870
+04/27/2021 16:31:56 - INFO - __main__ - Saved model checkpoint to [DIR: output]
+04/27/2021 16:32:10 - INFO - __main__ - ***** Running Validation *****
+04/27/2021 16:32:10 - INFO - __main__ -   Num steps = 20
+04/27/2021 16:32:10 - INFO - __main__ -   Batch size = 512
+04/27/2021 16:32:16 - INFO - __main__ - 
+
+04/27/2021 16:32:16 - INFO - __main__ - Validation Results
+04/27/2021 16:32:16 - INFO - __main__ - Global Steps: 12100
+04/27/2021 16:32:16 - INFO - __main__ - Valid Loss: 2.62509
+04/27/2021 16:32:16 - INFO - __main__ - Valid Accuracy: 0.36370
+04/27/2021 16:32:30 - INFO - __main__ - ***** Running Validation *****
+04/27/2021 16:32:30 - INFO - __main__ -   Num steps = 20
+04/27/2021 16:32:30 - INFO - __main__ -   Batch size = 512
+04/27/2021 16:32:37 - INFO - __main__ - 
+
+04/27/2021 16:32:37 - INFO - __main__ - Validation Results
+04/27/2021 16:32:37 - INFO - __main__ - Global Steps: 12200
+04/27/2021 16:32:37 - INFO - __main__ - Valid Loss: 2.60890
+04/27/2021 16:32:37 - INFO - __main__ - Valid Accuracy: 0.36950
+04/27/2021 16:32:38 - INFO - __main__ - Saved model checkpoint to [DIR: output]
+04/27/2021 16:32:51 - INFO - __main__ - ***** Running Validation *****
+04/27/2021 16:32:51 - INFO - __main__ -   Num steps = 20
+04/27/2021 16:32:51 - INFO - __main__ -   Batch size = 512
+04/27/2021 16:32:57 - INFO - __main__ - 
+
+04/27/2021 16:32:57 - INFO - __main__ - Validation Results
+04/27/2021 16:32:57 - INFO - __main__ - Global Steps: 12300
+04/27/2021 16:32:57 - INFO - __main__ - Valid Loss: 2.63297
+04/27/2021 16:32:57 - INFO - __main__ - Valid Accuracy: 0.36860
+04/27/2021 16:33:11 - INFO - __main__ - ***** Running Validation *****
+04/27/2021 16:33:11 - INFO - __main__ -   Num steps = 20
+04/27/2021 16:33:11 - INFO - __main__ -   Batch size = 512
+04/27/2021 16:33:18 - INFO - __main__ - 
+
+04/27/2021 16:33:18 - INFO - __main__ - Validation Results
+04/27/2021 16:33:18 - INFO - __main__ - Global Steps: 12400
+04/27/2021 16:33:18 - INFO - __main__ - Valid Loss: 2.61745
+04/27/2021 16:33:18 - INFO - __main__ - Valid Accuracy: 0.37000
+04/27/2021 16:33:18 - INFO - __main__ - Saved model checkpoint to [DIR: output]
+04/27/2021 16:33:31 - INFO - __main__ - ***** Running Validation *****
+04/27/2021 16:33:31 - INFO - __main__ -   Num steps = 20
+04/27/2021 16:33:31 - INFO - __main__ -   Batch size = 512
+04/27/2021 16:33:38 - INFO - __main__ - 
+
+04/27/2021 16:33:38 - INFO - __main__ - Validation Results
+04/27/2021 16:33:38 - INFO - __main__ - Global Steps: 12500
+04/27/2021 16:33:38 - INFO - __main__ - Valid Loss: 2.61546
+04/27/2021 16:33:38 - INFO - __main__ - Valid Accuracy: 0.36850
+04/27/2021 16:33:52 - INFO - __main__ - ***** Running Validation *****
+04/27/2021 16:33:52 - INFO - __main__ -   Num steps = 20
+04/27/2021 16:33:52 - INFO - __main__ -   Batch size = 512
+04/27/2021 16:33:58 - INFO - __main__ - 
+
+04/27/2021 16:33:58 - INFO - __main__ - Validation Results
+04/27/2021 16:33:58 - INFO - __main__ - Global Steps: 12600
+04/27/2021 16:33:58 - INFO - __main__ - Valid Loss: 2.59401
+04/27/2021 16:33:58 - INFO - __main__ - Valid Accuracy: 0.37130
+04/27/2021 16:33:59 - INFO - __main__ - Saved model checkpoint to [DIR: output]
+04/27/2021 16:34:13 - INFO - __main__ - ***** Running Validation *****
+04/27/2021 16:34:13 - INFO - __main__ -   Num steps = 20
+04/27/2021 16:34:13 - INFO - __main__ -   Batch size = 512
+04/27/2021 16:34:19 - INFO - __main__ - 
+
+04/27/2021 16:34:19 - INFO - __main__ - Validation Results
+04/27/2021 16:34:19 - INFO - __main__ - Global Steps: 12700
+04/27/2021 16:34:19 - INFO - __main__ - Valid Loss: 2.60700
+04/27/2021 16:34:19 - INFO - __main__ - Valid Accuracy: 0.37190
+04/27/2021 16:34:20 - INFO - __main__ - Saved model checkpoint to [DIR: output]
+04/27/2021 16:34:33 - INFO - __main__ - ***** Running Validation *****
+04/27/2021 16:34:33 - INFO - __main__ -   Num steps = 20
+04/27/2021 16:34:33 - INFO - __main__ -   Batch size = 512
+04/27/2021 16:34:40 - INFO - __main__ - 
+
+04/27/2021 16:34:40 - INFO - __main__ - Validation Results
+04/27/2021 16:34:40 - INFO - __main__ - Global Steps: 12800
+04/27/2021 16:34:40 - INFO - __main__ - Valid Loss: 2.59242
+04/27/2021 16:34:40 - INFO - __main__ - Valid Accuracy: 0.37380
+04/27/2021 16:34:41 - INFO - __main__ - Saved model checkpoint to [DIR: output]
+04/27/2021 16:34:54 - INFO - __main__ - ***** Running Validation *****
+04/27/2021 16:34:54 - INFO - __main__ -   Num steps = 20
+04/27/2021 16:34:54 - INFO - __main__ -   Batch size = 512
+04/27/2021 16:35:01 - INFO - __main__ - 
+
+04/27/2021 16:35:01 - INFO - __main__ - Validation Results
+04/27/2021 16:35:01 - INFO - __main__ - Global Steps: 12900
+04/27/2021 16:35:01 - INFO - __main__ - Valid Loss: 2.60248
+04/27/2021 16:35:01 - INFO - __main__ - Valid Accuracy: 0.37080
+04/27/2021 16:35:15 - INFO - __main__ - ***** Running Validation *****
+04/27/2021 16:35:15 - INFO - __main__ -   Num steps = 20
+04/27/2021 16:35:15 - INFO - __main__ -   Batch size = 512
+04/27/2021 16:35:22 - INFO - __main__ - 
+
+04/27/2021 16:35:22 - INFO - __main__ - Validation Results
+04/27/2021 16:35:22 - INFO - __main__ - Global Steps: 13000
+04/27/2021 16:35:22 - INFO - __main__ - Valid Loss: 2.60674
+04/27/2021 16:35:22 - INFO - __main__ - Valid Accuracy: 0.37950
+04/27/2021 16:35:23 - INFO - __main__ - Saved model checkpoint to [DIR: output]
+04/27/2021 16:35:36 - INFO - __main__ - ***** Running Validation *****
+04/27/2021 16:35:36 - INFO - __main__ -   Num steps = 20
+04/27/2021 16:35:36 - INFO - __main__ -   Batch size = 512
+04/27/2021 16:35:43 - INFO - __main__ - 
+
+04/27/2021 16:35:43 - INFO - __main__ - Validation Results
+04/27/2021 16:35:43 - INFO - __main__ - Global Steps: 13100
+04/27/2021 16:35:43 - INFO - __main__ - Valid Loss: 2.59684
+04/27/2021 16:35:43 - INFO - __main__ - Valid Accuracy: 0.37760
+04/27/2021 16:35:57 - INFO - __main__ - ***** Running Validation *****
+04/27/2021 16:35:57 - INFO - __main__ -   Num steps = 20
+04/27/2021 16:35:57 - INFO - __main__ -   Batch size = 512
+04/27/2021 16:36:03 - INFO - __main__ - 
+
+04/27/2021 16:36:03 - INFO - __main__ - Validation Results
+04/27/2021 16:36:03 - INFO - __main__ - Global Steps: 13200
+04/27/2021 16:36:03 - INFO - __main__ - Valid Loss: 2.61298
+04/27/2021 16:36:03 - INFO - __main__ - Valid Accuracy: 0.37540
+04/27/2021 16:36:17 - INFO - __main__ - ***** Running Validation *****
+04/27/2021 16:36:17 - INFO - __main__ -   Num steps = 20
+04/27/2021 16:36:17 - INFO - __main__ -   Batch size = 512
+04/27/2021 16:36:24 - INFO - __main__ - 
+
+04/27/2021 16:36:24 - INFO - __main__ - Validation Results
+04/27/2021 16:36:24 - INFO - __main__ - Global Steps: 13300
+04/27/2021 16:36:24 - INFO - __main__ - Valid Loss: 2.59855
+04/27/2021 16:36:24 - INFO - __main__ - Valid Accuracy: 0.37880
+04/27/2021 16:36:37 - INFO - __main__ - ***** Running Validation *****
+04/27/2021 16:36:37 - INFO - __main__ -   Num steps = 20
+04/27/2021 16:36:37 - INFO - __main__ -   Batch size = 512
+04/27/2021 16:36:44 - INFO - __main__ - 
+
+04/27/2021 16:36:44 - INFO - __main__ - Validation Results
+04/27/2021 16:36:44 - INFO - __main__ - Global Steps: 13400
+04/27/2021 16:36:44 - INFO - __main__ - Valid Loss: 2.59367
+04/27/2021 16:36:44 - INFO - __main__ - Valid Accuracy: 0.37740
+04/27/2021 16:36:57 - INFO - __main__ - ***** Running Validation *****
+04/27/2021 16:36:57 - INFO - __main__ -   Num steps = 20
+04/27/2021 16:36:57 - INFO - __main__ -   Batch size = 512
+04/27/2021 16:37:04 - INFO - __main__ - 
+
+04/27/2021 16:37:04 - INFO - __main__ - Validation Results
+04/27/2021 16:37:04 - INFO - __main__ - Global Steps: 13500
+04/27/2021 16:37:04 - INFO - __main__ - Valid Loss: 2.60812
+04/27/2021 16:37:04 - INFO - __main__ - Valid Accuracy: 0.37960
+04/27/2021 16:37:05 - INFO - __main__ - Saved model checkpoint to [DIR: output]
+04/27/2021 16:37:18 - INFO - __main__ - ***** Running Validation *****
+04/27/2021 16:37:18 - INFO - __main__ -   Num steps = 20
+04/27/2021 16:37:18 - INFO - __main__ -   Batch size = 512
+04/27/2021 16:37:25 - INFO - __main__ - 
+
+04/27/2021 16:37:25 - INFO - __main__ - Validation Results
+04/27/2021 16:37:25 - INFO - __main__ - Global Steps: 13600
+04/27/2021 16:37:25 - INFO - __main__ - Valid Loss: 2.60527
+04/27/2021 16:37:25 - INFO - __main__ - Valid Accuracy: 0.37600
+04/27/2021 16:37:38 - INFO - __main__ - ***** Running Validation *****
+04/27/2021 16:37:38 - INFO - __main__ -   Num steps = 20
+04/27/2021 16:37:38 - INFO - __main__ -   Batch size = 512
+04/27/2021 16:37:45 - INFO - __main__ - 
+
+04/27/2021 16:37:45 - INFO - __main__ - Validation Results
+04/27/2021 16:37:45 - INFO - __main__ - Global Steps: 13700
+04/27/2021 16:37:45 - INFO - __main__ - Valid Loss: 2.60181
+04/27/2021 16:37:45 - INFO - __main__ - Valid Accuracy: 0.37760
+04/27/2021 16:37:58 - INFO - __main__ - ***** Running Validation *****
+04/27/2021 16:37:58 - INFO - __main__ -   Num steps = 20
+04/27/2021 16:37:58 - INFO - __main__ -   Batch size = 512
+04/27/2021 16:38:05 - INFO - __main__ - 
+
+04/27/2021 16:38:05 - INFO - __main__ - Validation Results
+04/27/2021 16:38:05 - INFO - __main__ - Global Steps: 13800
+04/27/2021 16:38:05 - INFO - __main__ - Valid Loss: 2.58074
+04/27/2021 16:38:05 - INFO - __main__ - Valid Accuracy: 0.38230
+04/27/2021 16:38:06 - INFO - __main__ - Saved model checkpoint to [DIR: output]
+04/27/2021 16:38:19 - INFO - __main__ - ***** Running Validation *****
+04/27/2021 16:38:19 - INFO - __main__ -   Num steps = 20
+04/27/2021 16:38:19 - INFO - __main__ -   Batch size = 512
+04/27/2021 16:38:26 - INFO - __main__ - 
+
+04/27/2021 16:38:26 - INFO - __main__ - Validation Results
+04/27/2021 16:38:26 - INFO - __main__ - Global Steps: 13900
+04/27/2021 16:38:26 - INFO - __main__ - Valid Loss: 2.59919
+04/27/2021 16:38:26 - INFO - __main__ - Valid Accuracy: 0.38080
+04/27/2021 16:38:39 - INFO - __main__ - ***** Running Validation *****
+04/27/2021 16:38:39 - INFO - __main__ -   Num steps = 20
+04/27/2021 16:38:39 - INFO - __main__ -   Batch size = 512
+04/27/2021 16:38:46 - INFO - __main__ - 
+
+04/27/2021 16:38:46 - INFO - __main__ - Validation Results
+04/27/2021 16:38:46 - INFO - __main__ - Global Steps: 14000
+04/27/2021 16:38:46 - INFO - __main__ - Valid Loss: 2.57710
+04/27/2021 16:38:46 - INFO - __main__ - Valid Accuracy: 0.38150
+04/27/2021 16:39:00 - INFO - __main__ - ***** Running Validation *****
+04/27/2021 16:39:00 - INFO - __main__ -   Num steps = 20
+04/27/2021 16:39:00 - INFO - __main__ -   Batch size = 512
+04/27/2021 16:39:07 - INFO - __main__ - 
+
+04/27/2021 16:39:07 - INFO - __main__ - Validation Results
+04/27/2021 16:39:07 - INFO - __main__ - Global Steps: 14100
+04/27/2021 16:39:07 - INFO - __main__ - Valid Loss: 2.56446
+04/27/2021 16:39:07 - INFO - __main__ - Valid Accuracy: 0.38550
+04/27/2021 16:39:08 - INFO - __main__ - Saved model checkpoint to [DIR: output]
+04/27/2021 16:39:21 - INFO - __main__ - ***** Running Validation *****
+04/27/2021 16:39:21 - INFO - __main__ -   Num steps = 20
+04/27/2021 16:39:21 - INFO - __main__ -   Batch size = 512
+04/27/2021 16:39:28 - INFO - __main__ - 
+
+04/27/2021 16:39:28 - INFO - __main__ - Validation Results
+04/27/2021 16:39:28 - INFO - __main__ - Global Steps: 14200
+04/27/2021 16:39:28 - INFO - __main__ - Valid Loss: 2.60643
+04/27/2021 16:39:28 - INFO - __main__ - Valid Accuracy: 0.38530
+04/27/2021 16:39:41 - INFO - __main__ - ***** Running Validation *****
+04/27/2021 16:39:41 - INFO - __main__ -   Num steps = 20
+04/27/2021 16:39:41 - INFO - __main__ -   Batch size = 512
+04/27/2021 16:39:48 - INFO - __main__ - 
+
+04/27/2021 16:39:48 - INFO - __main__ - Validation Results
+04/27/2021 16:39:48 - INFO - __main__ - Global Steps: 14300
+04/27/2021 16:39:48 - INFO - __main__ - Valid Loss: 2.59296
+04/27/2021 16:39:48 - INFO - __main__ - Valid Accuracy: 0.38060
+04/27/2021 16:40:01 - INFO - __main__ - ***** Running Validation *****
+04/27/2021 16:40:01 - INFO - __main__ -   Num steps = 20
+04/27/2021 16:40:01 - INFO - __main__ -   Batch size = 512
+04/27/2021 16:40:08 - INFO - __main__ - 
+
+04/27/2021 16:40:08 - INFO - __main__ - Validation Results
+04/27/2021 16:40:08 - INFO - __main__ - Global Steps: 14400
+04/27/2021 16:40:08 - INFO - __main__ - Valid Loss: 2.57961
+04/27/2021 16:40:08 - INFO - __main__ - Valid Accuracy: 0.38340
+04/27/2021 16:40:22 - INFO - __main__ - ***** Running Validation *****
+04/27/2021 16:40:22 - INFO - __main__ -   Num steps = 20
+04/27/2021 16:40:22 - INFO - __main__ -   Batch size = 512
+04/27/2021 16:40:29 - INFO - __main__ - 
+
+04/27/2021 16:40:29 - INFO - __main__ - Validation Results
+04/27/2021 16:40:29 - INFO - __main__ - Global Steps: 14500
+04/27/2021 16:40:29 - INFO - __main__ - Valid Loss: 2.58599
+04/27/2021 16:40:29 - INFO - __main__ - Valid Accuracy: 0.38480
+04/27/2021 16:40:42 - INFO - __main__ - ***** Running Validation *****
+04/27/2021 16:40:42 - INFO - __main__ -   Num steps = 20
+04/27/2021 16:40:42 - INFO - __main__ -   Batch size = 512
+04/27/2021 16:40:49 - INFO - __main__ - 
+
+04/27/2021 16:40:49 - INFO - __main__ - Validation Results
+04/27/2021 16:40:49 - INFO - __main__ - Global Steps: 14600
+04/27/2021 16:40:49 - INFO - __main__ - Valid Loss: 2.59551
+04/27/2021 16:40:49 - INFO - __main__ - Valid Accuracy: 0.38320
+04/27/2021 16:41:03 - INFO - __main__ - ***** Running Validation *****
+04/27/2021 16:41:03 - INFO - __main__ -   Num steps = 20
+04/27/2021 16:41:03 - INFO - __main__ -   Batch size = 512
+04/27/2021 16:41:10 - INFO - __main__ - 
+
+04/27/2021 16:41:10 - INFO - __main__ - Validation Results
+04/27/2021 16:41:10 - INFO - __main__ - Global Steps: 14700
+04/27/2021 16:41:10 - INFO - __main__ - Valid Loss: 2.60139
+04/27/2021 16:41:10 - INFO - __main__ - Valid Accuracy: 0.38320
+04/27/2021 16:41:23 - INFO - __main__ - ***** Running Validation *****
+04/27/2021 16:41:23 - INFO - __main__ -   Num steps = 20
+04/27/2021 16:41:23 - INFO - __main__ -   Batch size = 512
+04/27/2021 16:41:29 - INFO - __main__ - 
+
+04/27/2021 16:41:29 - INFO - __main__ - Validation Results
+04/27/2021 16:41:29 - INFO - __main__ - Global Steps: 14800
+04/27/2021 16:41:29 - INFO - __main__ - Valid Loss: 2.59983
+04/27/2021 16:41:29 - INFO - __main__ - Valid Accuracy: 0.38500
+04/27/2021 16:41:44 - INFO - __main__ - ***** Running Validation *****
+04/27/2021 16:41:44 - INFO - __main__ -   Num steps = 20
+04/27/2021 16:41:44 - INFO - __main__ -   Batch size = 512
+04/27/2021 16:41:50 - INFO - __main__ - 
+
+04/27/2021 16:41:50 - INFO - __main__ - Validation Results
+04/27/2021 16:41:50 - INFO - __main__ - Global Steps: 14900
+04/27/2021 16:41:50 - INFO - __main__ - Valid Loss: 2.60217
+04/27/2021 16:41:50 - INFO - __main__ - Valid Accuracy: 0.38650
+04/27/2021 16:41:51 - INFO - __main__ - Saved model checkpoint to [DIR: output]
+04/27/2021 16:42:04 - INFO - __main__ - ***** Running Validation *****
+04/27/2021 16:42:04 - INFO - __main__ -   Num steps = 20
+04/27/2021 16:42:04 - INFO - __main__ -   Batch size = 512
+04/27/2021 16:42:11 - INFO - __main__ - 
+
+04/27/2021 16:42:11 - INFO - __main__ - Validation Results
+04/27/2021 16:42:11 - INFO - __main__ - Global Steps: 15000
+04/27/2021 16:42:11 - INFO - __main__ - Valid Loss: 2.58529
+04/27/2021 16:42:11 - INFO - __main__ - Valid Accuracy: 0.38350
+04/27/2021 16:42:25 - INFO - __main__ - ***** Running Validation *****
+04/27/2021 16:42:25 - INFO - __main__ -   Num steps = 20
+04/27/2021 16:42:25 - INFO - __main__ -   Batch size = 512
+04/27/2021 16:42:32 - INFO - __main__ - 
+
+04/27/2021 16:42:32 - INFO - __main__ - Validation Results
+04/27/2021 16:42:32 - INFO - __main__ - Global Steps: 15100
+04/27/2021 16:42:32 - INFO - __main__ - Valid Loss: 2.57034
+04/27/2021 16:42:32 - INFO - __main__ - Valid Accuracy: 0.38710
+04/27/2021 16:42:32 - INFO - __main__ - Saved model checkpoint to [DIR: output]
+04/27/2021 16:42:46 - INFO - __main__ - ***** Running Validation *****
+04/27/2021 16:42:46 - INFO - __main__ -   Num steps = 20
+04/27/2021 16:42:46 - INFO - __main__ -   Batch size = 512
+04/27/2021 16:42:53 - INFO - __main__ - 
+
+04/27/2021 16:42:53 - INFO - __main__ - Validation Results
+04/27/2021 16:42:53 - INFO - __main__ - Global Steps: 15200
+04/27/2021 16:42:53 - INFO - __main__ - Valid Loss: 2.58590
+04/27/2021 16:42:53 - INFO - __main__ - Valid Accuracy: 0.38900
+04/27/2021 16:42:53 - INFO - __main__ - Saved model checkpoint to [DIR: output]
+04/27/2021 16:43:08 - INFO - __main__ - ***** Running Validation *****
+04/27/2021 16:43:08 - INFO - __main__ -   Num steps = 20
+04/27/2021 16:43:08 - INFO - __main__ -   Batch size = 512
+04/27/2021 16:43:14 - INFO - __main__ - 
+
+04/27/2021 16:43:14 - INFO - __main__ - Validation Results
+04/27/2021 16:43:14 - INFO - __main__ - Global Steps: 15300
+04/27/2021 16:43:14 - INFO - __main__ - Valid Loss: 2.59440
+04/27/2021 16:43:14 - INFO - __main__ - Valid Accuracy: 0.38580
+04/27/2021 16:43:28 - INFO - __main__ - ***** Running Validation *****
+04/27/2021 16:43:28 - INFO - __main__ -   Num steps = 20
+04/27/2021 16:43:28 - INFO - __main__ -   Batch size = 512
+04/27/2021 16:43:34 - INFO - __main__ - 
+
+04/27/2021 16:43:34 - INFO - __main__ - Validation Results
+04/27/2021 16:43:34 - INFO - __main__ - Global Steps: 15400
+04/27/2021 16:43:34 - INFO - __main__ - Valid Loss: 2.59605
+04/27/2021 16:43:34 - INFO - __main__ - Valid Accuracy: 0.39000
+04/27/2021 16:43:35 - INFO - __main__ - Saved model checkpoint to [DIR: output]
+04/27/2021 16:43:48 - INFO - __main__ - ***** Running Validation *****
+04/27/2021 16:43:48 - INFO - __main__ -   Num steps = 20
+04/27/2021 16:43:48 - INFO - __main__ -   Batch size = 512
+04/27/2021 16:43:55 - INFO - __main__ - 
+
+04/27/2021 16:43:55 - INFO - __main__ - Validation Results
+04/27/2021 16:43:55 - INFO - __main__ - Global Steps: 15500
+04/27/2021 16:43:55 - INFO - __main__ - Valid Loss: 2.60118
+04/27/2021 16:43:55 - INFO - __main__ - Valid Accuracy: 0.38720
+04/27/2021 16:44:09 - INFO - __main__ - ***** Running Validation *****
+04/27/2021 16:44:09 - INFO - __main__ -   Num steps = 20
+04/27/2021 16:44:09 - INFO - __main__ -   Batch size = 512
+04/27/2021 16:44:15 - INFO - __main__ - 
+
+04/27/2021 16:44:15 - INFO - __main__ - Validation Results
+04/27/2021 16:44:15 - INFO - __main__ - Global Steps: 15600
+04/27/2021 16:44:15 - INFO - __main__ - Valid Loss: 2.58276
+04/27/2021 16:44:15 - INFO - __main__ - Valid Accuracy: 0.38800
+04/27/2021 16:44:29 - INFO - __main__ - ***** Running Validation *****
+04/27/2021 16:44:29 - INFO - __main__ -   Num steps = 20
+04/27/2021 16:44:29 - INFO - __main__ -   Batch size = 512
+04/27/2021 16:44:36 - INFO - __main__ - 
+
+04/27/2021 16:44:36 - INFO - __main__ - Validation Results
+04/27/2021 16:44:36 - INFO - __main__ - Global Steps: 15700
+04/27/2021 16:44:36 - INFO - __main__ - Valid Loss: 2.59683
+04/27/2021 16:44:36 - INFO - __main__ - Valid Accuracy: 0.38790
+04/27/2021 16:44:49 - INFO - __main__ - ***** Running Validation *****
+04/27/2021 16:44:49 - INFO - __main__ -   Num steps = 20
+04/27/2021 16:44:49 - INFO - __main__ -   Batch size = 512
+04/27/2021 16:44:56 - INFO - __main__ - 
+
+04/27/2021 16:44:56 - INFO - __main__ - Validation Results
+04/27/2021 16:44:56 - INFO - __main__ - Global Steps: 15800
+04/27/2021 16:44:56 - INFO - __main__ - Valid Loss: 2.57775
+04/27/2021 16:44:56 - INFO - __main__ - Valid Accuracy: 0.38970
+04/27/2021 16:45:09 - INFO - __main__ - ***** Running Validation *****
+04/27/2021 16:45:09 - INFO - __main__ -   Num steps = 20
+04/27/2021 16:45:09 - INFO - __main__ -   Batch size = 512
+04/27/2021 16:45:16 - INFO - __main__ - 
+
+04/27/2021 16:45:16 - INFO - __main__ - Validation Results
+04/27/2021 16:45:16 - INFO - __main__ - Global Steps: 15900
+04/27/2021 16:45:16 - INFO - __main__ - Valid Loss: 2.60238
+04/27/2021 16:45:16 - INFO - __main__ - Valid Accuracy: 0.38780
+04/27/2021 16:45:29 - INFO - __main__ - ***** Running Validation *****
+04/27/2021 16:45:29 - INFO - __main__ -   Num steps = 20
+04/27/2021 16:45:29 - INFO - __main__ -   Batch size = 512
+04/27/2021 16:45:36 - INFO - __main__ - 
+
+04/27/2021 16:45:36 - INFO - __main__ - Validation Results
+04/27/2021 16:45:36 - INFO - __main__ - Global Steps: 16000
+04/27/2021 16:45:36 - INFO - __main__ - Valid Loss: 2.58258
+04/27/2021 16:45:36 - INFO - __main__ - Valid Accuracy: 0.38910
+04/27/2021 16:45:50 - INFO - __main__ - ***** Running Validation *****
+04/27/2021 16:45:50 - INFO - __main__ -   Num steps = 20
+04/27/2021 16:45:50 - INFO - __main__ -   Batch size = 512
+04/27/2021 16:45:57 - INFO - __main__ - 
+
+04/27/2021 16:45:57 - INFO - __main__ - Validation Results
+04/27/2021 16:45:57 - INFO - __main__ - Global Steps: 16100
+04/27/2021 16:45:57 - INFO - __main__ - Valid Loss: 2.61468
+04/27/2021 16:45:57 - INFO - __main__ - Valid Accuracy: 0.38940
+04/27/2021 16:46:10 - INFO - __main__ - ***** Running Validation *****
+04/27/2021 16:46:10 - INFO - __main__ -   Num steps = 20
+04/27/2021 16:46:10 - INFO - __main__ -   Batch size = 512
+04/27/2021 16:46:16 - INFO - __main__ - 
+
+04/27/2021 16:46:16 - INFO - __main__ - Validation Results
+04/27/2021 16:46:16 - INFO - __main__ - Global Steps: 16200
+04/27/2021 16:46:16 - INFO - __main__ - Valid Loss: 2.58801
+04/27/2021 16:46:16 - INFO - __main__ - Valid Accuracy: 0.39300
+04/27/2021 16:46:17 - INFO - __main__ - Saved model checkpoint to [DIR: output]
+04/27/2021 16:46:31 - INFO - __main__ - ***** Running Validation *****
+04/27/2021 16:46:31 - INFO - __main__ -   Num steps = 20
+04/27/2021 16:46:31 - INFO - __main__ -   Batch size = 512
+04/27/2021 16:46:37 - INFO - __main__ - 
+
+04/27/2021 16:46:37 - INFO - __main__ - Validation Results
+04/27/2021 16:46:37 - INFO - __main__ - Global Steps: 16300
+04/27/2021 16:46:37 - INFO - __main__ - Valid Loss: 2.56892
+04/27/2021 16:46:37 - INFO - __main__ - Valid Accuracy: 0.39110
+04/27/2021 16:46:51 - INFO - __main__ - ***** Running Validation *****
+04/27/2021 16:46:51 - INFO - __main__ -   Num steps = 20
+04/27/2021 16:46:51 - INFO - __main__ -   Batch size = 512
+04/27/2021 16:46:58 - INFO - __main__ - 
+
+04/27/2021 16:46:58 - INFO - __main__ - Validation Results
+04/27/2021 16:46:58 - INFO - __main__ - Global Steps: 16400
+04/27/2021 16:46:58 - INFO - __main__ - Valid Loss: 2.55996
+04/27/2021 16:46:58 - INFO - __main__ - Valid Accuracy: 0.39200
+04/27/2021 16:47:12 - INFO - __main__ - ***** Running Validation *****
+04/27/2021 16:47:12 - INFO - __main__ -   Num steps = 20
+04/27/2021 16:47:12 - INFO - __main__ -   Batch size = 512
+04/27/2021 16:47:18 - INFO - __main__ - 
+
+04/27/2021 16:47:18 - INFO - __main__ - Validation Results
+04/27/2021 16:47:18 - INFO - __main__ - Global Steps: 16500
+04/27/2021 16:47:18 - INFO - __main__ - Valid Loss: 2.57685
+04/27/2021 16:47:18 - INFO - __main__ - Valid Accuracy: 0.39150
+04/27/2021 16:47:32 - INFO - __main__ - ***** Running Validation *****
+04/27/2021 16:47:32 - INFO - __main__ -   Num steps = 20
+04/27/2021 16:47:32 - INFO - __main__ -   Batch size = 512
+04/27/2021 16:47:38 - INFO - __main__ - 
+
+04/27/2021 16:47:38 - INFO - __main__ - Validation Results
+04/27/2021 16:47:38 - INFO - __main__ - Global Steps: 16600
+04/27/2021 16:47:38 - INFO - __main__ - Valid Loss: 2.58362
+04/27/2021 16:47:38 - INFO - __main__ - Valid Accuracy: 0.39210
+04/27/2021 16:47:52 - INFO - __main__ - ***** Running Validation *****
+04/27/2021 16:47:52 - INFO - __main__ -   Num steps = 20
+04/27/2021 16:47:52 - INFO - __main__ -   Batch size = 512
+04/27/2021 16:47:58 - INFO - __main__ - 
+
+04/27/2021 16:47:58 - INFO - __main__ - Validation Results
+04/27/2021 16:47:58 - INFO - __main__ - Global Steps: 16700
+04/27/2021 16:47:58 - INFO - __main__ - Valid Loss: 2.56609
+04/27/2021 16:47:58 - INFO - __main__ - Valid Accuracy: 0.39180
+04/27/2021 16:48:12 - INFO - __main__ - ***** Running Validation *****
+04/27/2021 16:48:12 - INFO - __main__ -   Num steps = 20
+04/27/2021 16:48:12 - INFO - __main__ -   Batch size = 512
+04/27/2021 16:48:18 - INFO - __main__ - 
+
+04/27/2021 16:48:18 - INFO - __main__ - Validation Results
+04/27/2021 16:48:18 - INFO - __main__ - Global Steps: 16800
+04/27/2021 16:48:18 - INFO - __main__ - Valid Loss: 2.58351
+04/27/2021 16:48:18 - INFO - __main__ - Valid Accuracy: 0.39180
+04/27/2021 16:48:32 - INFO - __main__ - ***** Running Validation *****
+04/27/2021 16:48:32 - INFO - __main__ -   Num steps = 20
+04/27/2021 16:48:32 - INFO - __main__ -   Batch size = 512
+04/27/2021 16:48:38 - INFO - __main__ - 
+
+04/27/2021 16:48:38 - INFO - __main__ - Validation Results
+04/27/2021 16:48:38 - INFO - __main__ - Global Steps: 16900
+04/27/2021 16:48:38 - INFO - __main__ - Valid Loss: 2.57410
+04/27/2021 16:48:38 - INFO - __main__ - Valid Accuracy: 0.39490
+04/27/2021 16:48:39 - INFO - __main__ - Saved model checkpoint to [DIR: output]
+04/27/2021 16:48:53 - INFO - __main__ - ***** Running Validation *****
+04/27/2021 16:48:53 - INFO - __main__ -   Num steps = 20
+04/27/2021 16:48:53 - INFO - __main__ -   Batch size = 512
+04/27/2021 16:48:59 - INFO - __main__ - 
+
+04/27/2021 16:48:59 - INFO - __main__ - Validation Results
+04/27/2021 16:48:59 - INFO - __main__ - Global Steps: 17000
+04/27/2021 16:48:59 - INFO - __main__ - Valid Loss: 2.59038
+04/27/2021 16:48:59 - INFO - __main__ - Valid Accuracy: 0.39320
+04/27/2021 16:49:12 - INFO - __main__ - ***** Running Validation *****
+04/27/2021 16:49:12 - INFO - __main__ -   Num steps = 20
+04/27/2021 16:49:12 - INFO - __main__ -   Batch size = 512
+04/27/2021 16:49:18 - INFO - __main__ - 
+
+04/27/2021 16:49:18 - INFO - __main__ - Validation Results
+04/27/2021 16:49:18 - INFO - __main__ - Global Steps: 17100
+04/27/2021 16:49:18 - INFO - __main__ - Valid Loss: 2.60080
+04/27/2021 16:49:18 - INFO - __main__ - Valid Accuracy: 0.39500
+04/27/2021 16:49:19 - INFO - __main__ - Saved model checkpoint to [DIR: output]
+04/27/2021 16:49:32 - INFO - __main__ - ***** Running Validation *****
+04/27/2021 16:49:32 - INFO - __main__ -   Num steps = 20
+04/27/2021 16:49:32 - INFO - __main__ -   Batch size = 512
+04/27/2021 16:49:39 - INFO - __main__ - 
+
+04/27/2021 16:49:39 - INFO - __main__ - Validation Results
+04/27/2021 16:49:39 - INFO - __main__ - Global Steps: 17200
+04/27/2021 16:49:39 - INFO - __main__ - Valid Loss: 2.59444
+04/27/2021 16:49:39 - INFO - __main__ - Valid Accuracy: 0.39500
+04/27/2021 16:49:53 - INFO - __main__ - ***** Running Validation *****
+04/27/2021 16:49:53 - INFO - __main__ -   Num steps = 20
+04/27/2021 16:49:53 - INFO - __main__ -   Batch size = 512
+04/27/2021 16:49:58 - INFO - __main__ - 
+
+04/27/2021 16:49:58 - INFO - __main__ - Validation Results
+04/27/2021 16:49:58 - INFO - __main__ - Global Steps: 17300
+04/27/2021 16:49:58 - INFO - __main__ - Valid Loss: 2.59308
+04/27/2021 16:49:58 - INFO - __main__ - Valid Accuracy: 0.39600
+04/27/2021 16:49:59 - INFO - __main__ - Saved model checkpoint to [DIR: output]
+04/27/2021 16:50:12 - INFO - __main__ - ***** Running Validation *****
+04/27/2021 16:50:12 - INFO - __main__ -   Num steps = 20
+04/27/2021 16:50:12 - INFO - __main__ -   Batch size = 512
+04/27/2021 16:50:19 - INFO - __main__ - 
+
+04/27/2021 16:50:19 - INFO - __main__ - Validation Results
+04/27/2021 16:50:19 - INFO - __main__ - Global Steps: 17400
+04/27/2021 16:50:19 - INFO - __main__ - Valid Loss: 2.59803
+04/27/2021 16:50:19 - INFO - __main__ - Valid Accuracy: 0.39150
+04/27/2021 16:50:31 - INFO - __main__ - ***** Running Validation *****
+04/27/2021 16:50:31 - INFO - __main__ -   Num steps = 20
+04/27/2021 16:50:31 - INFO - __main__ -   Batch size = 512
+04/27/2021 16:50:39 - INFO - __main__ - 
+
+04/27/2021 16:50:39 - INFO - __main__ - Validation Results
+04/27/2021 16:50:39 - INFO - __main__ - Global Steps: 17500
+04/27/2021 16:50:39 - INFO - __main__ - Valid Loss: 2.59337
+04/27/2021 16:50:39 - INFO - __main__ - Valid Accuracy: 0.39380
+04/27/2021 16:50:52 - INFO - __main__ - ***** Running Validation *****
+04/27/2021 16:50:52 - INFO - __main__ -   Num steps = 20
+04/27/2021 16:50:52 - INFO - __main__ -   Batch size = 512
+04/27/2021 16:51:00 - INFO - __main__ - 
+
+04/27/2021 16:51:00 - INFO - __main__ - Validation Results
+04/27/2021 16:51:00 - INFO - __main__ - Global Steps: 17600
+04/27/2021 16:51:00 - INFO - __main__ - Valid Loss: 2.59225
+04/27/2021 16:51:00 - INFO - __main__ - Valid Accuracy: 0.39430
+04/27/2021 16:51:13 - INFO - __main__ - ***** Running Validation *****
+04/27/2021 16:51:13 - INFO - __main__ -   Num steps = 20
+04/27/2021 16:51:13 - INFO - __main__ -   Batch size = 512
+04/27/2021 16:51:21 - INFO - __main__ - 
+
+04/27/2021 16:51:21 - INFO - __main__ - Validation Results
+04/27/2021 16:51:21 - INFO - __main__ - Global Steps: 17700
+04/27/2021 16:51:21 - INFO - __main__ - Valid Loss: 2.58180
+04/27/2021 16:51:21 - INFO - __main__ - Valid Accuracy: 0.39340
+04/27/2021 16:51:34 - INFO - __main__ - ***** Running Validation *****
+04/27/2021 16:51:34 - INFO - __main__ -   Num steps = 20
+04/27/2021 16:51:34 - INFO - __main__ -   Batch size = 512
+04/27/2021 16:51:42 - INFO - __main__ - 
+
+04/27/2021 16:51:42 - INFO - __main__ - Validation Results
+04/27/2021 16:51:42 - INFO - __main__ - Global Steps: 17800
+04/27/2021 16:51:42 - INFO - __main__ - Valid Loss: 2.58359
+04/27/2021 16:51:42 - INFO - __main__ - Valid Accuracy: 0.39660
+04/27/2021 16:51:43 - INFO - __main__ - Saved model checkpoint to [DIR: output]
+04/27/2021 16:51:56 - INFO - __main__ - ***** Running Validation *****
+04/27/2021 16:51:56 - INFO - __main__ -   Num steps = 20
+04/27/2021 16:51:56 - INFO - __main__ -   Batch size = 512
+04/27/2021 16:52:04 - INFO - __main__ - 
+
+04/27/2021 16:52:04 - INFO - __main__ - Validation Results
+04/27/2021 16:52:04 - INFO - __main__ - Global Steps: 17900
+04/27/2021 16:52:04 - INFO - __main__ - Valid Loss: 2.57650
+04/27/2021 16:52:04 - INFO - __main__ - Valid Accuracy: 0.39570
+04/27/2021 16:52:18 - INFO - __main__ - ***** Running Validation *****
+04/27/2021 16:52:18 - INFO - __main__ -   Num steps = 20
+04/27/2021 16:52:18 - INFO - __main__ -   Batch size = 512
+04/27/2021 16:52:25 - INFO - __main__ - 
+
+04/27/2021 16:52:25 - INFO - __main__ - Validation Results
+04/27/2021 16:52:25 - INFO - __main__ - Global Steps: 18000
+04/27/2021 16:52:25 - INFO - __main__ - Valid Loss: 2.58373
+04/27/2021 16:52:25 - INFO - __main__ - Valid Accuracy: 0.39550
+04/27/2021 16:52:38 - INFO - __main__ - ***** Running Validation *****
+04/27/2021 16:52:38 - INFO - __main__ -   Num steps = 20
+04/27/2021 16:52:38 - INFO - __main__ -   Batch size = 512
+04/27/2021 16:52:45 - INFO - __main__ - 
+
+04/27/2021 16:52:45 - INFO - __main__ - Validation Results
+04/27/2021 16:52:45 - INFO - __main__ - Global Steps: 18100
+04/27/2021 16:52:45 - INFO - __main__ - Valid Loss: 2.58886
+04/27/2021 16:52:45 - INFO - __main__ - Valid Accuracy: 0.39800
+04/27/2021 16:52:46 - INFO - __main__ - Saved model checkpoint to [DIR: output]
+04/27/2021 16:52:59 - INFO - __main__ - ***** Running Validation *****
+04/27/2021 16:52:59 - INFO - __main__ -   Num steps = 20
+04/27/2021 16:52:59 - INFO - __main__ -   Batch size = 512
+04/27/2021 16:53:07 - INFO - __main__ - 
+
+04/27/2021 16:53:07 - INFO - __main__ - Validation Results
+04/27/2021 16:53:07 - INFO - __main__ - Global Steps: 18200
+04/27/2021 16:53:07 - INFO - __main__ - Valid Loss: 2.58396
+04/27/2021 16:53:07 - INFO - __main__ - Valid Accuracy: 0.39710
+04/27/2021 16:53:20 - INFO - __main__ - ***** Running Validation *****
+04/27/2021 16:53:20 - INFO - __main__ -   Num steps = 20
+04/27/2021 16:53:20 - INFO - __main__ -   Batch size = 512
+04/27/2021 16:53:26 - INFO - __main__ - 
+
+04/27/2021 16:53:26 - INFO - __main__ - Validation Results
+04/27/2021 16:53:26 - INFO - __main__ - Global Steps: 18300
+04/27/2021 16:53:26 - INFO - __main__ - Valid Loss: 2.59574
+04/27/2021 16:53:26 - INFO - __main__ - Valid Accuracy: 0.39790
+04/27/2021 16:53:40 - INFO - __main__ - ***** Running Validation *****
+04/27/2021 16:53:40 - INFO - __main__ -   Num steps = 20
+04/27/2021 16:53:40 - INFO - __main__ -   Batch size = 512
+04/27/2021 16:53:47 - INFO - __main__ - 
+
+04/27/2021 16:53:47 - INFO - __main__ - Validation Results
+04/27/2021 16:53:47 - INFO - __main__ - Global Steps: 18400
+04/27/2021 16:53:47 - INFO - __main__ - Valid Loss: 2.59212
+04/27/2021 16:53:47 - INFO - __main__ - Valid Accuracy: 0.39680
+04/27/2021 16:54:00 - INFO - __main__ - ***** Running Validation *****
+04/27/2021 16:54:00 - INFO - __main__ -   Num steps = 20
+04/27/2021 16:54:00 - INFO - __main__ -   Batch size = 512
+04/27/2021 16:54:08 - INFO - __main__ - 
+
+04/27/2021 16:54:08 - INFO - __main__ - Validation Results
+04/27/2021 16:54:08 - INFO - __main__ - Global Steps: 18500
+04/27/2021 16:54:08 - INFO - __main__ - Valid Loss: 2.58237
+04/27/2021 16:54:08 - INFO - __main__ - Valid Accuracy: 0.39780
+04/27/2021 16:54:21 - INFO - __main__ - ***** Running Validation *****
+04/27/2021 16:54:21 - INFO - __main__ -   Num steps = 20
+04/27/2021 16:54:21 - INFO - __main__ -   Batch size = 512
+04/27/2021 16:54:29 - INFO - __main__ - 
+
+04/27/2021 16:54:29 - INFO - __main__ - Validation Results
+04/27/2021 16:54:29 - INFO - __main__ - Global Steps: 18600
+04/27/2021 16:54:29 - INFO - __main__ - Valid Loss: 2.58793
+04/27/2021 16:54:29 - INFO - __main__ - Valid Accuracy: 0.39710
+04/27/2021 16:54:41 - INFO - __main__ - ***** Running Validation *****
+04/27/2021 16:54:41 - INFO - __main__ -   Num steps = 20
+04/27/2021 16:54:41 - INFO - __main__ -   Batch size = 512
+04/27/2021 16:54:49 - INFO - __main__ - 
+
+04/27/2021 16:54:49 - INFO - __main__ - Validation Results
+04/27/2021 16:54:49 - INFO - __main__ - Global Steps: 18700
+04/27/2021 16:54:49 - INFO - __main__ - Valid Loss: 2.58179
+04/27/2021 16:54:49 - INFO - __main__ - Valid Accuracy: 0.39720
+04/27/2021 16:55:03 - INFO - __main__ - ***** Running Validation *****
+04/27/2021 16:55:03 - INFO - __main__ -   Num steps = 20
+04/27/2021 16:55:03 - INFO - __main__ -   Batch size = 512
+04/27/2021 16:55:10 - INFO - __main__ - 
+
+04/27/2021 16:55:10 - INFO - __main__ - Validation Results
+04/27/2021 16:55:10 - INFO - __main__ - Global Steps: 18800
+04/27/2021 16:55:10 - INFO - __main__ - Valid Loss: 2.58093
+04/27/2021 16:55:10 - INFO - __main__ - Valid Accuracy: 0.39760
+04/27/2021 16:55:23 - INFO - __main__ - ***** Running Validation *****
+04/27/2021 16:55:23 - INFO - __main__ -   Num steps = 20
+04/27/2021 16:55:23 - INFO - __main__ -   Batch size = 512
+04/27/2021 16:55:30 - INFO - __main__ - 
+
+04/27/2021 16:55:30 - INFO - __main__ - Validation Results
+04/27/2021 16:55:30 - INFO - __main__ - Global Steps: 18900
+04/27/2021 16:55:30 - INFO - __main__ - Valid Loss: 2.58406
+04/27/2021 16:55:30 - INFO - __main__ - Valid Accuracy: 0.39690
+04/27/2021 16:55:44 - INFO - __main__ - ***** Running Validation *****
+04/27/2021 16:55:44 - INFO - __main__ -   Num steps = 20
+04/27/2021 16:55:44 - INFO - __main__ -   Batch size = 512
+04/27/2021 16:55:51 - INFO - __main__ - 
+
+04/27/2021 16:55:51 - INFO - __main__ - Validation Results
+04/27/2021 16:55:51 - INFO - __main__ - Global Steps: 19000
+04/27/2021 16:55:51 - INFO - __main__ - Valid Loss: 2.58322
+04/27/2021 16:55:51 - INFO - __main__ - Valid Accuracy: 0.39700
+04/27/2021 16:56:04 - INFO - __main__ - ***** Running Validation *****
+04/27/2021 16:56:04 - INFO - __main__ -   Num steps = 20
+04/27/2021 16:56:04 - INFO - __main__ -   Batch size = 512
+04/27/2021 16:56:10 - INFO - __main__ - 
+
+04/27/2021 16:56:10 - INFO - __main__ - Validation Results
+04/27/2021 16:56:10 - INFO - __main__ - Global Steps: 19100
+04/27/2021 16:56:10 - INFO - __main__ - Valid Loss: 2.58084
+04/27/2021 16:56:10 - INFO - __main__ - Valid Accuracy: 0.39760
+04/27/2021 16:56:23 - INFO - __main__ - ***** Running Validation *****
+04/27/2021 16:56:23 - INFO - __main__ -   Num steps = 20
+04/27/2021 16:56:23 - INFO - __main__ -   Batch size = 512
+04/27/2021 16:56:31 - INFO - __main__ - 
+
+04/27/2021 16:56:31 - INFO - __main__ - Validation Results
+04/27/2021 16:56:31 - INFO - __main__ - Global Steps: 19200
+04/27/2021 16:56:31 - INFO - __main__ - Valid Loss: 2.58412
+04/27/2021 16:56:31 - INFO - __main__ - Valid Accuracy: 0.39720
+04/27/2021 16:56:43 - INFO - __main__ - ***** Running Validation *****
+04/27/2021 16:56:43 - INFO - __main__ -   Num steps = 20
+04/27/2021 16:56:43 - INFO - __main__ -   Batch size = 512
+04/27/2021 16:56:52 - INFO - __main__ - 
+
+04/27/2021 16:56:52 - INFO - __main__ - Validation Results
+04/27/2021 16:56:52 - INFO - __main__ - Global Steps: 19300
+04/27/2021 16:56:52 - INFO - __main__ - Valid Loss: 2.58360
+04/27/2021 16:56:52 - INFO - __main__ - Valid Accuracy: 0.39690
+04/27/2021 16:57:05 - INFO - __main__ - ***** Running Validation *****
+04/27/2021 16:57:05 - INFO - __main__ -   Num steps = 20
+04/27/2021 16:57:05 - INFO - __main__ -   Batch size = 512
+04/27/2021 16:57:12 - INFO - __main__ - 
+
+04/27/2021 16:57:12 - INFO - __main__ - Validation Results
+04/27/2021 16:57:12 - INFO - __main__ - Global Steps: 19400
+04/27/2021 16:57:12 - INFO - __main__ - Valid Loss: 2.59753
+04/27/2021 16:57:12 - INFO - __main__ - Valid Accuracy: 0.39730
+04/27/2021 16:57:25 - INFO - __main__ - ***** Running Validation *****
+04/27/2021 16:57:25 - INFO - __main__ -   Num steps = 20
+04/27/2021 16:57:25 - INFO - __main__ -   Batch size = 512
+04/27/2021 16:57:33 - INFO - __main__ - 
+
+04/27/2021 16:57:33 - INFO - __main__ - Validation Results
+04/27/2021 16:57:33 - INFO - __main__ - Global Steps: 19500
+04/27/2021 16:57:33 - INFO - __main__ - Valid Loss: 2.58017
+04/27/2021 16:57:33 - INFO - __main__ - Valid Accuracy: 0.39760
+04/27/2021 16:57:46 - INFO - __main__ - ***** Running Validation *****
+04/27/2021 16:57:46 - INFO - __main__ -   Num steps = 20
+04/27/2021 16:57:46 - INFO - __main__ -   Batch size = 512
+04/27/2021 16:57:53 - INFO - __main__ - 
+
+04/27/2021 16:57:53 - INFO - __main__ - Validation Results
+04/27/2021 16:57:53 - INFO - __main__ - Global Steps: 19600
+04/27/2021 16:57:53 - INFO - __main__ - Valid Loss: 2.57837
+04/27/2021 16:57:53 - INFO - __main__ - Valid Accuracy: 0.39700
+04/27/2021 16:58:06 - INFO - __main__ - ***** Running Validation *****
+04/27/2021 16:58:06 - INFO - __main__ -   Num steps = 20
+04/27/2021 16:58:06 - INFO - __main__ -   Batch size = 512
+04/27/2021 16:58:14 - INFO - __main__ - 
+
+04/27/2021 16:58:14 - INFO - __main__ - Validation Results
+04/27/2021 16:58:14 - INFO - __main__ - Global Steps: 19700
+04/27/2021 16:58:14 - INFO - __main__ - Valid Loss: 2.58737
+04/27/2021 16:58:14 - INFO - __main__ - Valid Accuracy: 0.39690
+04/27/2021 16:58:26 - INFO - __main__ - ***** Running Validation *****
+04/27/2021 16:58:26 - INFO - __main__ -   Num steps = 20
+04/27/2021 16:58:26 - INFO - __main__ -   Batch size = 512
+04/27/2021 16:58:35 - INFO - __main__ - 
+
+04/27/2021 16:58:35 - INFO - __main__ - Validation Results
+04/27/2021 16:58:35 - INFO - __main__ - Global Steps: 19800
+04/27/2021 16:58:35 - INFO - __main__ - Valid Loss: 2.59205
+04/27/2021 16:58:35 - INFO - __main__ - Valid Accuracy: 0.39630
+04/27/2021 16:58:47 - INFO - __main__ - ***** Running Validation *****
+04/27/2021 16:58:47 - INFO - __main__ -   Num steps = 20
+04/27/2021 16:58:47 - INFO - __main__ -   Batch size = 512
+04/27/2021 16:58:55 - INFO - __main__ - 
+
+04/27/2021 16:58:55 - INFO - __main__ - Validation Results
+04/27/2021 16:58:55 - INFO - __main__ - Global Steps: 19900
+04/27/2021 16:58:55 - INFO - __main__ - Valid Loss: 2.59443
+04/27/2021 16:58:55 - INFO - __main__ - Valid Accuracy: 0.39610
+04/27/2021 16:59:09 - INFO - __main__ - ***** Running Validation *****
+04/27/2021 16:59:09 - INFO - __main__ -   Num steps = 20
+04/27/2021 16:59:09 - INFO - __main__ -   Batch size = 512
+04/27/2021 16:59:17 - INFO - __main__ - 
+
+04/27/2021 16:59:17 - INFO - __main__ - Validation Results
+04/27/2021 16:59:17 - INFO - __main__ - Global Steps: 20000
+04/27/2021 16:59:17 - INFO - __main__ - Valid Loss: 2.58086
+04/27/2021 16:59:17 - INFO - __main__ - Valid Accuracy: 0.39910
+04/27/2021 16:59:18 - INFO - __main__ - Saved model checkpoint to [DIR: output]
+04/27/2021 16:59:18 - INFO - __main__ - Best Accuracy: 	0.399100
+04/27/2021 16:59:18 - INFO - __main__ - End Training!
+04/27/2021 16:59:18 - INFO - root - last 68.7 min

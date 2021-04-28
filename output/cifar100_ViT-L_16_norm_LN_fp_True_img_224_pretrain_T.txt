@@ -1,0 +1,23 @@
+04/28/2021 07:42:28 - WARNING - __main__ - Process rank: -1, device: cuda, n_gpu: 1, distributed training: False, 16-bits training: True
+04/28/2021 07:42:31 - INFO - __main__ - ./pretrain/ViT-L_16.npz
+04/28/2021 07:42:36 - INFO - __main__ - classifier: token
+hidden_size: 1024
+patches:
+  size: !!python/tuple
+  - 16
+  - 16
+representation_size: null
+transformer:
+  attention_dropout_rate: 0.0
+  dropout_rate: 0.1
+  mlp_dim: 4096
+  num_heads: 16
+  num_layers: 24
+
+04/28/2021 07:42:36 - INFO - __main__ - Training parameters Namespace(dataset='cifar100', decay_type='cosine', device=device(type='cuda'), eval_batch_size=512, eval_every=100, fp16=True, fp16_opt_level='O2', gpu_id='1', gradient_accumulation_steps=1, img_size=224, learning_rate=0.05, local_rank=-1, loss_scale=0, max_grad_norm=1.0, model_type='ViT-L_16', n_gpu=1, name='cifar100-100_500_ViT-L_16_norm_LN_fp_True_img_224_pretrain_T', norm_type='LN', num_steps=20000, output_dir='output', pretrained_dir='./pretrain/ViT-L_16.npz', seed=42, train_batch_size=128, warmup_steps=500, weight_decay=0)
+04/28/2021 07:42:36 - INFO - __main__ - Total Parameter: 	303.4M
+04/28/2021 07:42:37 - INFO - __main__ - ***** Running training *****
+04/28/2021 07:42:37 - INFO - __main__ -   Total optimization steps = 20000
+04/28/2021 07:42:37 - INFO - __main__ -   Instantaneous batch size per GPU = 128
+04/28/2021 07:42:37 - INFO - __main__ -   Total train batch size (w. parallel, distributed & accumulation) = 128
+04/28/2021 07:42:37 - INFO - __main__ -   Gradient Accumulation steps = 1
