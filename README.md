@@ -7,14 +7,17 @@ The project investigates vision transformer with **different normalization metho
 
 HKU-COMP9501 course project. Group members: Tao Chaofan and Deng weipeng. 
 
-Dictionary structure:
+Directory structure:
 ```
 RescaleViT
-   |--img # Some visualization files
-   |--logs #  Tensorboard file during training
-   |--models # Model design
-   |--ouptut # Result log files during evaluation
-   |--utils # Some utilization including data loader, distributed training, learning scheduler and visualizers
+   |--/img # Some visualization files
+   |--/logs #  Tensorboard file during training
+   |--/models # Model design
+   |--/ouptut # Result log files during evaluation
+   |--/utils # Some utilization including data loader, distributed training, learning scheduler and visualizers
+   train.py # the main program
+   train1.sh # script to quickly start all the experiments on cifar10
+   train3.sh # script to quickly start all the experiments on cifar100
 ```
 
 
@@ -128,7 +131,7 @@ Besides the past experience about CNN, we have several empirical deductions.
 |    model     |  LN | BN | GN | Rescale  | resolution | acc(%) |  time(min)   |
 |:------------:|:--:|:--:|:--:|:------:|:-------------:|:-----:|:-------:|
 |   ViT-L_16   |  + | | |                |  224x224   |      40.2          |  303.9 |
-|   ViT-L_16*  |   + | | |             |  224x224   |              |   |
+|   ViT-L_16*  |   + | | |             |  224x224   |        **93.2**      |   298.8 |
 |   ViT-L_16   |  | + ||             |  224x224   |         34.5        |  320.5 |
 |   ViT-L_16   |   | | +    |        |  224x224   |        31.6        |  326.7  |
 |   ViT-L_16   |    |  | | +           |  224x224   |         34.6       |   **295.6** |
