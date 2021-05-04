@@ -5,7 +5,7 @@ Pytorch implementation of RescaleViT.
 
 The project investigates vision transformer with **different normalization methods (LN, GN, BN)**, or **training without normalization and without performance degradation**. [[PDF]](https://github.com/ChaofanTao/RescaleViT/blob/master/RescaleViT%20Training%20Vision%20Transformer%20withoutNormalization.pdf)
 
-**HKU-COMP9501 course project**. Group members: Tao Chaofan and Deng weipeng. 
+HKU-COMP9501 course project. Group members: Tao Chaofan and Deng weipeng. 
 
 Directory structure:
 ```
